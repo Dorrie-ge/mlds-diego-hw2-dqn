@@ -19,9 +19,10 @@ The tested ALE package supplies its ROMs. If a cluster installation cannot creat
 
 ## Full experiment on deepdish, one GPU
 
-Request one GPU using the course's documented scheduler procedure. The allocation command is site-specific and deliberately not guessed here. Within the allocated job, from this directory:
+The account owner confirmed that direct SSH execution on an idle GPU is allowed. On deepdish, select one currently idle GPU and run from this directory (the active run uses GPU 0):
 
 ```bash
+export CUDA_VISIBLE_DEVICES=0
 export GITHUB_USER=your_actual_username
 export REPO_URL=https://github.com/your_actual_username/your_actual_public_repository
 bash run_deepdish.sh
@@ -80,16 +81,17 @@ Create a public GitHub repository under your real account and upload every `.py`
 
 `python pixel_smoke.py` collects 1024 real ALE transitions and performs 60 updates on a fixed 64-transition batch with a frozen target network. `results/pixel_smoke.json` records the first/last-five mean Huber losses and checks that target parameters did not change. A falling fixed-batch loss supports correct CNN/replay/optimizer integration; it is explicitly not convergence or policy-improvement evidence.
 
-## Nomad submission for this deepdish account
+## Direct SSH run for this account
 
-The node has Nomad-managed GPU reservations. Do not infer availability solely from nvidia-smi. `deepdish.nomad.hcl` requests exactly one GPU through the scheduler and mounts the isolated assignment directory. It is specific to netid wer7892 (numeric UID/GID 1215055794), so other accounts must change its user and volume fields.
+The account owner confirmed direct GPU use is permitted. The earlier Nomad queue job `wer7892-diego-hw2` was stopped before starting direct execution, preventing duplicate training. The active pipeline uses exactly one physical GPU through `CUDA_VISIBLE_DEVICES=0`, an isolated `.venv`, a file lock, and a detached process. The CUDA preflight executes CNN forward/backward operations before the long run.
 
 ```bash
 cd ~/diego_hw2_codex_20261106
-nomad job validate deepdish.nomad.hcl
-nomad job plan deepdish.nomad.hcl
-nomad job run -detach deepdish.nomad.hcl
-nomad job status wer7892-diego-hw2
+export CUDA_VISIBLE_DEVICES=0
+export GITHUB_USER=Dorrie-ge
+export REPO_URL=https://github.com/Dorrie-ge/mlds-diego-hw2-dqn
+nohup bash run_deepdish.sh > direct_training.log 2>&1 < /dev/null &
+tail -n 20 direct_training.log
 ```
 
-The container uses PyTorch 2.5.1 with CUDA 11.8, an isolated dependency directory, and one scheduler-assigned GPU. `RUN_COMPLETE` is written only after all experiments and final report generation succeed. A pending Nomad allocation is not a running training experiment. Do not stop or alter other users' jobs to gain access to their reserved devices.
+Check current GPU usage before choosing a device. `RUN_STARTED` records launch time; `run_exit_status.txt` records eventual exit status, and `RUN_COMPLETE` is written only after all training, evaluations and final report generation succeed. A process launch is not evidence that MsPacman has converged. The retained Nomad configuration is an optional scheduling alternative, not a requirement for the direct run. Do not start both pipelines.
