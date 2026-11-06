@@ -33,6 +33,25 @@ def build(a):
             if len(rows)<4000:missing.append('MsPacman: fewer than 4000 training episodes; inspect the learning curve and extend training.')
             if (d/'evaluation.json').exists() and (d/'random.json').exists():
                 if json.loads((d/'evaluation.json').read_text())['mean']<=json.loads((d/'random.json').read_text())['mean']:missing.append('MsPacman does not outperform its matched random baseline.')
+    # When the scheduled full run reaches reporting, run the final frozen-model
+    # image interventions on CPU. This does not interrupt or use another GPU.
+    vp=root/'validation.json'
+    validation=json.loads(vp.read_text()) if vp.exists() else {}
+    if a.final and not missing:
+        import hashlib
+        ckpt=root/'mspacman'/'best.pt'
+        old=validation.get('mspacman_pixel_interventions',{})
+        expected=hashlib.sha256(ckpt.read_bytes()).hexdigest() if ckpt.exists() else old.get('checkpoint_sha256')
+        if not old or old.get('checkpoint_sha256')!=expected:
+            if not ckpt.exists(): raise SystemExit('Final pixel validation requires the trained MsPacman checkpoint.')
+            from validate import pixel_ablation
+            print('Running paired frozen-model pixel interventions on CPU...',flush=True)
+            validation['mspacman_pixel_interventions']=pixel_ablation(ckpt,root/'mspacman'/'ablation.csv',50)
+            vp.write_text(json.dumps(validation,indent=2))
+    if not validation.get('analytic_learning') or not validation.get('cartpole_angle_perturbation'):
+        missing.append('Analytic learning and CartPole robustness evidence are missing.')
+    if not validation.get('mspacman_pixel_interventions'):
+        missing.append('Frozen-model MsPacman pixel interventions remain pending.')
     if a.final and missing:raise SystemExit('Final report refused:\n'+'\n'.join(missing))
     draft=bool(missing); output=BASE/('report_DRAFT.pdf' if draft else 'report.pdf')
     styles=getSampleStyleSheet(); styles.add(ParagraphStyle(name='Text',fontName='Helvetica',fontSize=10,leading=14,spaceAfter=8)); styles.add(ParagraphStyle(name='SmallText',fontSize=8,leading=11,spaceAfter=6)); styles.add(ParagraphStyle(name='CodeSmall',fontName='Courier',fontSize=7,leading=10)); styles['Title'].textColor=colors.HexColor('#16384b'); styles['Heading1'].fontSize=17; styles['Heading2'].fontSize=12
@@ -65,8 +84,13 @@ def build(a):
             p(escape(line),'SmallText')
         if any(x.startswith('mspacman: missing') for x in missing):p('MsPacman full training, its required learning curves, and its 500-episode trained-policy/random evaluations have not been completed. The two-episode smoke run does not establish learning or performance.','SmallText')
     heading('Reproduction and audit trail')
-    p('Install requirements.txt inside a virtual environment. On deepdish, request one GPU using the course scheduler and run bash run_deepdish.sh with GITHUB_USER and REPO_URL set to actual public repository details. README.md gives every individual training, evaluation, plotting and validation command. train.csv, evaluation.csv, random.csv, config.json, first-ten-step traces and validation.json provide the numerical audit trail. Checkpoints are selected on validation seeds, never on the 500 final test episodes.')
-    p('Local execution is exploratory and does not meet the assignment\'s deepdish GPU requirement. The GPU script writes hardware.txt; do not describe local results as deepdish results.','SmallText')
+    p('Use setup_deepdish.sh for the Python 3.10 / CUDA 11.8 environment, or the local requirements.txt for the original CPU setup. On deepdish, select exactly one idle GPU with CUDA_VISIBLE_DEVICES and run bash run_deepdish.sh with GITHUB_USER and REPO_URL set. The account owner confirmed direct SSH GPU execution is permitted. README.md gives every individual training, evaluation, plotting and validation command. train.csv, evaluation.csv, random.csv, config.json, first-ten-step traces and validation.json provide the numerical audit trail. Checkpoints are selected on validation seeds, never on the 500 final test episodes.')
+    provenance=BASE/'run_provenance.json'
+    if provenance.exists():
+        info=json.loads(provenance.read_text())
+        p('Execution record: '+escape(str(info.get('hostname','deepdish')))+'; '+escape(str(info.get('gpu_name','GPU')))+'; PyTorch '+escape(str(info.get('torch','')))+'; CUDA '+escape(str(info.get('cuda','')))+'. Exactly one GPU was visible to training. Raw logs, hardware.txt, per-game config.json and run_provenance.json are retained.','SmallText')
+    else:
+        p('The retained local CPU results are exploratory. Final deepdish results must carry hardware and per-game device records.','SmallText')
     page();title('1. Algorithm and experimental design')
     heading('Bellman learning and architecture')
     p('For a replay tuple (s, a, r, s_next, terminated), the target is y = r + gamma (1 - terminated) max_b Q_target(s_next, b). A Huber loss fits Q_online(s,a) to y; gradients are clipped to norm 10. The default is ordinary DQN. The optional --double switch chooses the next action with the online network and evaluates it with the target network; it is not enabled for the reported default run.')
@@ -95,7 +119,10 @@ def build(a):
         else:p('Some held-out episodes did not reach 500 steps. The strict goal of maintaining the pole upright for every evaluated episode is not demonstrated; the failure rate is retained rather than hidden.')
         image(d/'histogram.png',450);image(d/'calibration.png',450)
         er=read_csv(d/'evaluation.csv'); q0=np.array([float(x['q_start']) for x in er]); mc=np.array([float(x['discounted_return']) for x in er])
-        p(f'Mean initial Q={q0.mean():.4f}; mean realized discounted return={mc.mean():.4f}; mean error={(q0-mc).mean():.4f}. For this all-500-step run, the missing constant-reward tail is only .95^500/.05, about 1.46e-10. Thus the observed positive calibration bias cannot be explained by that tail, despite perfect survival.', 'SmallText')
+        extra=''
+        if e['success_500']==1:
+            extra=' For 500-step trajectories the omitted constant-reward tail is only .95^500/.05, about 1.46e-10; a larger calibration gap cannot be explained by that tail.'
+        p(f'Mean initial Q={q0.mean():.4f}; mean realized discounted return={mc.mean():.4f}; mean error={(q0-mc).mean():.4f}.'+extra, 'SmallText')
         p('Figure 3. Held-out raw-return histogram. Figure 4 (non-standard). Initial greedy Q versus realized discounted return, colored by episode length, and its error versus length. Because a time limit cuts off an otherwise bootstrapped process, a truncated return is a censored prefix; a positive gap alone does not prove optimistic bias. Near Q=20, value calibration may look accurate even when survival varies substantially.','SmallText')
     else:p('The required 500-episode held-out evaluation has not been completed.')
     page();title('4. Edge cases and validation')
@@ -115,7 +142,12 @@ def build(a):
         p('A controlled state intervention adds a pole-angle offset immediately after reset, keeping every other initial state component and each of 100 evaluation seeds fixed. This challenges the narrow training reset distribution without changing the physics or reward.')
         table([['Angle offset (rad)','Mean return','Sample SD','500-step success']]+[[r['angle_offset_rad'],f'{r["mean"]:.2f}',f'{r["std"]:.2f}',f'{r["success_500"]*100:.1f}%'] for r in v['cartpole_angle_perturbation']],[120,120,120,119])
         image(d/'robustness.png',400)
-        p('Figure 5. All five tested offsets achieved 500 steps in all 100 episodes, so observed intervals collapse to zero width. This supports recovery within the tested range; it does not establish robustness outside it or uncertainty across training seeds.','SmallText')
+        robust=v['cartpole_angle_perturbation']
+        if all(r['success_500']==1 for r in robust):
+            interpretation='All tested offsets achieved 500 steps in every sampled episode, so observed intervals collapse to zero width.'
+        else:
+            interpretation='The table retains failures and the plot shows how robustness changes with initial angle.'
+        p('Figure 5. '+interpretation+' These tests cover the stated offsets only and do not estimate variability across training seeds.','SmallText')
     heading('MsPacman results and limitations')
     md=root/'mspacman'
     if not (md/'evaluation.json').exists():
@@ -132,6 +164,16 @@ def build(a):
         if (md/'random.json').exists():
             r=json.loads((md/'random.json').read_text());p(f'Random baseline: mean {r["mean"]:.3f}, sample SD {r["std"]:.3f}, {r["n"]} matched-seed episodes. Greedy minus random mean score: {m["mean"]-r["mean"]:.3f}.')
         rows=read_csv(md/'train.csv'); rew=np.array([float(x['reward']) for x in rows]);p(f'Training first-100 mean {rew[:100].mean():.2f}; last-100 mean {rew[-100:].mean():.2f}. A higher final mean is evidence of improvement in this run; one run cannot establish stability across training seeds.')
+    if 'mspacman_pixel_interventions' in v:
+        page();title('8. MsPacman visual-information interventions')
+        pix=v['mspacman_pixel_interventions']; cond=pix['conditions']
+        p('The selected frozen CNN is evaluated on 50 paired, separate seeds (500000-500049) under three inference conditions: intact image history; the latest frame repeated four times, removing temporal differences while retaining current appearance; and a uniform intensity-128 input, removing all state information. The true environment and raw score remain unchanged. These seeds are not used to select or retune the policy.')
+        table([['Condition','Mean raw score','Sample SD','Action entropy (bits)']]+[[name,f'{r["mean"]:.2f}',f'{r["std"]:.2f}',f'{r["action_entropy_bits"]:.3f}'] for name,r in cond.items()],[150,105,105,119])
+        for name in ['repeat_latest_frame','constant_image']:
+            diff=cond[name]['intact_minus_condition'];lo,hi=diff['approx_95_interval']
+            p(f'Intact minus {name}: paired mean score difference {diff["mean"]:.2f}, approximate 95% interval [{lo:.2f}, {hi:.2f}].', 'SmallText')
+        p('Prediction: if useful image and temporal information affect control, intact inputs should outperform the corresponding removals. Positive paired differences support that hypothesis in this trained model; a near-zero or negative difference limits the claim. The constant-image policy is deterministic and receives identical network inputs every step, so it should choose one fixed action (entropy zero), an additional check on evaluation semantics. These are distribution-shift interventions, not equal-budget retraining experiments; they do not prove optimal behavior or isolate every visual feature.')
+        p('Reproduce: python validate.py --checkpoint results/cartpole/best.pt --pixel-checkpoint results/mspacman/best.pt --pixel-episodes 50 --out results/validation.json. Per-episode diagnostic scores are retained in results/mspacman/ablation.csv, and validation.json records the exact checkpoint SHA-256. The required 500-episode intact-policy test remains a separate experiment.','SmallText')
     page();title('Additional three months: validation plan')
     heading('Month 1: reproducibility and causality')
     p('Train at least five independent seeds per environment with a fixed budget in environment frames and GPU hours. Reserve new final test seeds before tuning. Compare DQN, Double DQN, no target network and no replay under equal budgets; log raw scores, TD errors, target drift and confidence intervals. Test whether removing replay or the target network worsens instability rather than assuming it does. Use a zero-reward control and a tiny deterministic image MDP to verify the CNN/replay path learns known pixel-based values, extending the present analytic control.')

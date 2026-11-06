@@ -39,7 +39,7 @@ python dqn.py evaluate --checkpoint results/cartpole/best.pt --episodes 500 --ou
 python dqn.py evaluate --checkpoint results/cartpole/best.pt --episodes 500 --random --out results/cartpole/random --device cuda
 python dqn.py evaluate --checkpoint results/mspacman/best.pt --episodes 500 --out results/mspacman/evaluation --device cuda
 python dqn.py evaluate --checkpoint results/mspacman/best.pt --episodes 500 --random --out results/mspacman/random --device cuda
-python validate.py --checkpoint results/cartpole/best.pt --out results/validation.json
+python validate.py --checkpoint results/cartpole/best.pt --pixel-checkpoint results/mspacman/best.pt --pixel-episodes 50 --out results/validation.json
 python plots.py
 python report.py --github-user your_actual_username --repo-url https://github.com/your_actual_username/your_actual_public_repository --final
 ```
@@ -95,3 +95,7 @@ tail -n 20 direct_training.log
 ```
 
 Check current GPU usage before choosing a device. `RUN_STARTED` records launch time; `run_exit_status.txt` records eventual exit status, and `RUN_COMPLETE` is written only after all training, evaluations and final report generation succeed. A process launch is not evidence that MsPacman has converged. The retained Nomad configuration is an optional scheduling alternative, not a requirement for the direct run. Do not start both pipelines.
+
+### Final frozen-model image interventions
+
+After the full training and 500-episode evaluations, `report.py --final` ensures that the selected MsPacman checkpoint has paired pixel-intervention evidence. If missing, it runs 50 independent diagnostic seeds on CPU for intact frame history, repeated latest frame, and a constant image. It records raw scores in `results/mspacman/ablation.csv`, action entropy, paired differences, approximate intervals and checkpoint SHA-256 in `validation.json`. This changes inference inputs only; it is not retraining and does not use those seeds for checkpoint selection. CPU evaluation does not allocate an additional GPU. The CLI command above reproduces the experiments explicitly.

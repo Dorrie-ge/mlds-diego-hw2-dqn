@@ -60,8 +60,44 @@ def perturb(checkpoint,n=100):
         rows.append(dict(angle_offset_rad=angle,n=n,mean=float(np.mean(rewards)),std=float(np.std(rewards,ddof=1)),success_500=float(np.mean(np.array(rewards)==500)),rewards=rewards))
     env.close(); return rows
 
+
+def pixel_ablation(checkpoint, out_csv, n=50):
+    """Paired inference interventions on a frozen CNN, disjoint diagnostic seeds.
+    Removing history and removing all image information test different hypotheses.
+    This does not retrain or select the network using diagnostic outcomes.
+    """
+    import csv, hashlib
+    seed_all(73)
+    net,game=load_model(checkpoint,torch.device('cpu'))
+    if game!='mspacman': raise ValueError('Pixel interventions require MsPacman')
+    env=make_env(game); rows=[]; summaries={}
+    for condition in ['intact','repeat_latest_frame','constant_image']:
+        scores=[]; counts=np.zeros(9,dtype=np.int64)
+        for ep in range(n):
+            state,_=env.reset(seed=500000+ep); score=0.; length=0
+            while True:
+                if condition=='repeat_latest_frame': seen=np.repeat(state[-1:],4,axis=0)
+                elif condition=='constant_image': seen=np.full_like(state,128)
+                else: seen=state
+                action=policy(net,seen,'cpu'); counts[action]+=1
+                state,reward,term,trunc,_=env.step(action);score+=reward;length+=1
+                if term or trunc: break
+            scores.append(float(score));rows.append(dict(condition=condition,seed=500000+ep,reward=score,length=length))
+        probs=counts/counts.sum();positive=probs[probs>0]
+        summaries[condition]=dict(n=n,mean=float(np.mean(scores)),std=float(np.std(scores,ddof=1)),rewards=scores,action_entropy_bits=float(-(positive*np.log2(positive)).sum()))
+    env.close()
+    intact=np.array(summaries['intact']['rewards'])
+    for name in ['repeat_latest_frame','constant_image']:
+        delta=intact-np.array(summaries[name]['rewards']);se=delta.std(ddof=1)/np.sqrt(n)
+        summaries[name]['intact_minus_condition']=dict(mean=float(delta.mean()),approx_95_interval=[float(delta.mean()-1.96*se),float(delta.mean()+1.96*se)])
+    out_csv=Path(out_csv);out_csv.parent.mkdir(parents=True,exist_ok=True)
+    with out_csv.open('w') as f:
+        writer=csv.DictWriter(f,fieldnames=['condition','seed','reward','length']);writer.writeheader();writer.writerows(rows)
+    return dict(checkpoint_sha256=hashlib.sha256(Path(checkpoint).read_bytes()).hexdigest(),seed_start=500000,conditions=summaries,limitation='Inference interventions are distribution shifts, not equal-budget retraining ablations. Differences support dependence on visual information but do not prove optimal control.')
+
 if __name__=='__main__':
-    p=argparse.ArgumentParser(); p.add_argument('--out',default='results/validation.json'); p.add_argument('--checkpoint'); a=p.parse_args()
+    p=argparse.ArgumentParser(); p.add_argument('--out',default='results/validation.json'); p.add_argument('--checkpoint'); p.add_argument('--pixel-checkpoint'); p.add_argument('--pixel-episodes',type=int,default=50); a=p.parse_args()
     r=analytic()
     if a.checkpoint: r['cartpole_angle_perturbation']=perturb(a.checkpoint)
+    if a.pixel_checkpoint: r['mspacman_pixel_interventions']=pixel_ablation(a.pixel_checkpoint,Path(a.out).parent/'mspacman'/'ablation.csv',a.pixel_episodes)
     Path(a.out).parent.mkdir(parents=True,exist_ok=True); Path(a.out).write_text(json.dumps(r,indent=2)); print(json.dumps(r,indent=2))
