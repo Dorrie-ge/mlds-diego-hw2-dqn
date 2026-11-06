@@ -1,0 +1,10 @@
+{
+  "n": 500,
+  "mean": 500.0,
+  "std": 0.0,
+  "minimum": 500.0,
+  "maximum": 500.0,
+  "seed_start": 100000,
+  "policy": "greedy",
+  "success_500": 1.0
+}

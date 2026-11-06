@@ -1,0 +1,6 @@
+# Python 3.10, GTX 1080. Install PyTorch separately using the command in setup_deepdish.sh.
+gymnasium==1.4.0
+ale-py==0.12.1
+numpy==2.2.6
+matplotlib==3.10.8
+reportlab==4.4.10

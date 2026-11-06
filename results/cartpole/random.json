@@ -1,0 +1,10 @@
+{
+  "n": 500,
+  "mean": 22.02,
+  "std": 10.296778491090754,
+  "minimum": 9.0,
+  "maximum": 65.0,
+  "seed_start": 100000,
+  "policy": "uniform random",
+  "success_500": 0.0
+}

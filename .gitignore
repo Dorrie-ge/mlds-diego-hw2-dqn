@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+.mpl/
+*.pt
+*.zip
+results/*/best.pt
+results/*/last.pt
+.nomad-packages/
+.pip-cache/
+.venv-container/
+source.tar.gz
+setup.log
