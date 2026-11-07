@@ -1,6 +1,6 @@
 # Reproducing my experiments
 
-I keep my training/evaluation implementation at the repository root, all scientific data under `results/`, my original execution records under `artifacts/run/`, and the complete report in `report.pdf` and README's page previews. I trained on deepdish1 with one GTX 1080, PyTorch 2.5.1+cu118 and Python 3.10. The completed experiment exited with status 0.
+I keep my training/evaluation implementation at the repository root, all scientific data under `results/`, my original execution records under `artifacts/run/`, and the complete report in `report.pdf`, linked from README. I trained on deepdish1 with one GTX 1080, PyTorch 2.5.1+cu118 and Python 3.10. The completed experiment exited with status 0.
 
 ## Installation
 
@@ -17,7 +17,7 @@ The ALE package used in my run supplies ROMs. I use exactly `CartPole-v1` and `A
 
 ## Times New Roman
 
-I use actual Times New Roman TTF files for every PDF text element and every chart label. I embed the used font faces in the PDF and render the PDF pages into README, preserving the report typography on GitHub.
+I use actual Times New Roman TTF files for every PDF text element and every chart label. I embed the used font faces in the PDF and link that PDF from README.
 
 I use four licensed font files (regular, bold, italic and bold italic). `report_fonts.py` searches standard macOS, Windows and Microsoft core-font directories on Linux. For another location I set:
 
@@ -27,7 +27,7 @@ export TNR_FONT_DIR=/path/to/my/licensed/TimesNewRoman/fonts
 
 I support names such as `Times New Roman.ttf`, `Times New Roman Bold.ttf`, `Times New Roman Italic.ttf`, `Times New Roman Bold Italic.ttf`, or the Microsoft core-font names `times.ttf`, `timesbd.ttf`, `timesi.ttf`, `timesbi.ttf`. I do not redistribute these font binaries. My rendering code raises an explicit error if Times New Roman is unavailable, avoiding a silent substitute.
 
-I also install Poppler (`pdftoppm`) for README previews. If it is not on PATH, I set `PDFTOPPM_BIN` to its executable. I regenerate the existing evidence with:
+I regenerate the existing evidence and README index with:
 
 ```bash
 python plots.py --results results
@@ -51,7 +51,7 @@ nohup bash run_deepdish.sh > artifacts/run/direct_training.log 2>&1 < /dev/null 
 
 I create `artifacts/run/` before using the redirected log if it does not already exist. I use a file lock to prevent duplicate launches and check that exactly one GPU is visible. I write hardware, provenance, start/end timestamps and exit status under `artifacts/run/`. I preserve existing results before rerunning because the pipeline writes to the standard result directories.
 
-My pipeline trains both games, evaluates each selected model and its random baseline for 500 episodes, runs validation, produces figures, and builds the PDF. `RUN_COMPLETE` is written only after all those steps succeed. I build README page previews separately with `build_readme.py` so Poppler is not required for network training.
+My pipeline trains both games, evaluates each selected model and its random baseline for 500 episodes, runs validation, produces figures, and builds the PDF. `RUN_COMPLETE` is written only after all those steps succeed. I refresh the README index separately with `build_readme.py`.
 
 ## Individual experiments
 

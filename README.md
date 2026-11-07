@@ -1,6 +1,6 @@
 # MLDS Assignment 2 - Deep Q-Network
 
-I implemented and trained DQN for **CartPole-v1** and image-based **ALE/MsPacman-v5** on a single deepdish GPU. I present my complete first-person report below, with the same Times New Roman typography as the PDF.
+I implemented and trained DQN for **CartPole-v1** and image-based **ALE/MsPacman-v5** on a single deepdish GPU. I provide my first-person report as a Times New Roman PDF linked below.
 
 **[Read or download the final PDF](report.pdf)** · **[Reproduce my experiments](docs/REPRODUCING.md)** · **[Browse raw results](results/)**
 
@@ -21,7 +21,7 @@ I reached 500 steps in every CartPole test episode. For MsPacman, I completed 60
 | [dqn.py](dqn.py) | My networks, replay buffer, training and evaluation |
 | [validate.py](validate.py) | My analytic, robustness and image-intervention experiments |
 | [plots.py](plots.py), [report.py](report.py), [report_fonts.py](report_fonts.py) | Reproducible Times New Roman figures and report |
-| [build_readme.py](build_readme.py) | PDF page rendering and this README |
+| [build_readme.py](build_readme.py) | This repository index and report link |
 | [results/cartpole/](results/cartpole/), [results/mspacman/](results/mspacman/) | Raw data, configurations, traces and figures |
 | [artifacts/run/](artifacts/run/) | My original GPU log, hardware, provenance and completion records |
 | [docs/REPRODUCING.md](docs/REPRODUCING.md) | Installation, commands and validation documentation |
@@ -31,7 +31,7 @@ I keep trained checkpoints out of GitHub. I retain their hashes in SHA256SUMS.js
 
 ## Regenerate my report
 
-After installing the documented dependencies and licensed Times New Roman fonts, I regenerate the figures, report and embedded pages with:
+After installing the documented dependencies and licensed Times New Roman fonts, I regenerate the figures, report and README index with:
 
 ```bash
 python plots.py --results results
@@ -39,28 +39,4 @@ python report.py --github-user Dorrie-ge --repo-url https://github.com/Dorrie-ge
 python build_readme.py
 ```
 
-I can regenerate the report from the retained results without retraining the networks. I use Poppler's `pdftoppm` to build the page previews. I do not redistribute font binaries; [the font setup instructions](docs/REPRODUCING.md#times-new-roman) explain the supported locations and `TNR_FONT_DIR`.
-
-## My complete report
-
-I embed all 10 pages directly below so the report keeps its Times New Roman font, figures, tables and pagination inside GitHub. Click a page to enlarge it, or use the PDF link above.
-
-![My report, page 1 of 10](docs/report-pages/page-01.png)
-
-![My report, page 2 of 10](docs/report-pages/page-02.png)
-
-![My report, page 3 of 10](docs/report-pages/page-03.png)
-
-![My report, page 4 of 10](docs/report-pages/page-04.png)
-
-![My report, page 5 of 10](docs/report-pages/page-05.png)
-
-![My report, page 6 of 10](docs/report-pages/page-06.png)
-
-![My report, page 7 of 10](docs/report-pages/page-07.png)
-
-![My report, page 8 of 10](docs/report-pages/page-08.png)
-
-![My report, page 9 of 10](docs/report-pages/page-09.png)
-
-![My report, page 10 of 10](docs/report-pages/page-10.png)
+I can regenerate the report from the retained results without retraining the networks. I do not redistribute font binaries; [the font setup instructions](docs/REPRODUCING.md#times-new-roman) explain the supported locations and `TNR_FONT_DIR`.

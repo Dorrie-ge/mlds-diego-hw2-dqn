@@ -77,7 +77,6 @@ def build(a):
     ce=json.loads((cp/'evaluation.json').read_text());cr=json.loads((cp/'random.json').read_text())
     me=json.loads((ms/'evaluation.json').read_text());mr=json.loads((ms/'random.json').read_text())
     title('Assignment 2 - Deep Q-Network')
-    p('Diego HW2 | MLDS | Due November 11, 2026, 11:59 pm','Heading2')
     p('GitHub username: '+escape(a.github_user))
     p('Repository: '+escape(a.repo_url.rstrip('/').split('/')[-1]))
     p('Public source URL: '+escape(a.repo_url))
@@ -155,7 +154,7 @@ def build(a):
     heading('Month 3: I would test calibration, stress and statistics')
     p('I would archive fixed states and collect repeated greedy rollouts with independent environment randomness to estimate return distributions against Q. I would separate terminal and censored trajectories, bootstrap paired score improvements, and aggregate across training seeds. I would predeclare stopping rules and minimum meaningful gains, then evaluate once on untouched final seeds. I would stress interrupted jobs, GPU determinism, memory limits, replay overwrite and long games, implementing exact replay/optimizer/RNG checkpoints before relying on resumed training.')
     heading('My submission and reproducibility record')
-    p('I include my public repository identity, all source, raw evidence, required figures for both environments, 500-episode statistics, validation discussion and deepdish single-GPU provenance. I provide this PDF for Canvas submission and keep the complete report preview in README.md. I preserve the experimental limitations rather than treating successful policy evaluation as proof of perfect Q calibration.')
+    p('I include my public repository identity, all source, raw evidence, required figures for both environments, 500-episode statistics, validation discussion and deepdish single-GPU provenance. I provide this PDF for Canvas submission and link the complete PDF from README.md. I preserve the experimental limitations rather than treating successful policy evaluation as proof of perfect Q calibration.')
     heading('References')
     for text in ['[1] Farama Foundation. MsPacman, Arcade Learning Environment. https://ale.farama.org/environments/ms_pacman/','[2] Farama Foundation. Handling Time Limits. https://gymnasium.farama.org/tutorials/gymnasium_basics/handling_time_limits/','[3] Mnih et al. Human-level control through deep reinforcement learning. Nature 518, 529-533 (2015). https://www.nature.com/articles/nature14236']:p(escape(text),'SmallText')
     def footer(canvas,doc):
