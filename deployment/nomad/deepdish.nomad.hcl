@@ -20,7 +20,7 @@ job "wer7892-diego-hw2" {
       config {
         image = "pytorch/pytorch:2.5.1-cuda11.8-cudnn9-runtime"
         command = "/bin/bash"
-        args = ["/workspace/run_nomad.sh"]
+        args = ["/workspace/deployment/nomad/run_nomad.sh"]
         work_dir = "/workspace"
         volumes = ["/nfs/home/wer7892/diego_hw2_codex_20261106:/workspace"]
       }
