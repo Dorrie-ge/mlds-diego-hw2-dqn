@@ -1,0 +1,1577 @@
+GPU preflight passed: 2.5.1+cu118 NVIDIA GeForce GTX 1080
+cartpole ep=10 steps=172 reward=23 val=None elapsed=0.2s
+cartpole ep=20 steps=391 reward=31 val=None elapsed=0.3s
+cartpole ep=30 steps=555 reward=19 val=None elapsed=0.5s
+cartpole ep=40 steps=754 reward=23 val=None elapsed=0.5s
+cartpole ep=50 steps=1040 reward=28 val=9.05 elapsed=1.4s
+cartpole ep=60 steps=1328 reward=43 val=None elapsed=1.8s
+cartpole ep=70 steps=1559 reward=24 val=None elapsed=2.0s
+cartpole ep=80 steps=1757 reward=15 val=None elapsed=2.3s
+cartpole ep=90 steps=1965 reward=9 val=None elapsed=2.5s
+cartpole ep=100 steps=2178 reward=14 val=23.4 elapsed=2.9s
+cartpole ep=110 steps=2461 reward=15 val=None elapsed=3.2s
+cartpole ep=120 steps=2633 reward=13 val=None elapsed=3.3s
+cartpole ep=130 steps=2889 reward=27 val=None elapsed=3.8s
+cartpole ep=140 steps=3149 reward=13 val=None elapsed=4.0s
+cartpole ep=150 steps=3406 reward=24 val=242.35 elapsed=5.6s
+cartpole ep=160 steps=3667 reward=35 val=None elapsed=5.9s
+cartpole ep=170 steps=4048 reward=17 val=None elapsed=6.2s
+cartpole ep=180 steps=4446 reward=52 val=None elapsed=9.3s
+cartpole ep=190 steps=4711 reward=17 val=None elapsed=9.5s
+cartpole ep=200 steps=5111 reward=49 val=225.9 elapsed=11.0s
+cartpole ep=210 steps=5441 reward=29 val=None elapsed=11.4s
+cartpole ep=220 steps=5950 reward=16 val=None elapsed=11.8s
+cartpole ep=230 steps=6491 reward=24 val=None elapsed=13.4s
+cartpole ep=240 steps=6888 reward=38 val=None elapsed=13.8s
+cartpole ep=250 steps=7245 reward=132 val=155.85 elapsed=15.0s
+cartpole ep=260 steps=7612 reward=46 val=None elapsed=15.3s
+cartpole ep=270 steps=8092 reward=34 val=None elapsed=15.8s
+cartpole ep=280 steps=8554 reward=33 val=None elapsed=17.0s
+cartpole ep=290 steps=9165 reward=23 val=None elapsed=17.5s
+cartpole ep=300 steps=9748 reward=99 val=151.55 elapsed=18.8s
+cartpole ep=310 steps=10189 reward=44 val=None elapsed=19.2s
+cartpole ep=320 steps=10689 reward=10 val=None elapsed=19.6s
+cartpole ep=330 steps=11343 reward=27 val=None elapsed=20.7s
+cartpole ep=340 steps=12191 reward=57 val=None elapsed=21.4s
+cartpole ep=350 steps=13159 reward=12 val=177.15 elapsed=23.1s
+cartpole ep=360 steps=14290 reward=31 val=None elapsed=24.0s
+cartpole ep=370 steps=15458 reward=20 val=None elapsed=25.1s
+cartpole ep=380 steps=16753 reward=13 val=None elapsed=27.2s
+cartpole ep=390 steps=17713 reward=124 val=None elapsed=27.9s
+cartpole ep=400 steps=18906 reward=121 val=107.25 elapsed=29.5s
+cartpole ep=410 steps=19986 reward=123 val=None elapsed=30.4s
+cartpole ep=420 steps=21356 reward=152 val=None elapsed=31.5s
+cartpole ep=430 steps=23264 reward=220 val=None elapsed=34.0s
+cartpole ep=440 steps=24744 reward=139 val=None elapsed=35.2s
+cartpole ep=450 steps=26652 reward=125 val=103.25 elapsed=37.3s
+cartpole ep=460 steps=28228 reward=194 val=None elapsed=38.6s
+cartpole ep=470 steps=29747 reward=130 val=None elapsed=39.8s
+cartpole ep=480 steps=31097 reward=282 val=None elapsed=41.7s
+cartpole ep=490 steps=32078 reward=113 val=None elapsed=42.5s
+cartpole ep=500 steps=33451 reward=113 val=145.65 elapsed=44.4s
+cartpole ep=510 steps=35359 reward=285 val=None elapsed=46.0s
+cartpole ep=520 steps=36759 reward=111 val=None elapsed=47.4s
+cartpole ep=530 steps=38369 reward=137 val=None elapsed=49.5s
+cartpole ep=540 steps=39745 reward=128 val=None elapsed=50.7s
+cartpole ep=550 steps=40772 reward=120 val=105.35 elapsed=52.1s
+cartpole ep=560 steps=42104 reward=112 val=None elapsed=53.2s
+cartpole ep=570 steps=43523 reward=116 val=None elapsed=54.4s
+cartpole ep=580 steps=44720 reward=107 val=None elapsed=56.0s
+cartpole ep=590 steps=45896 reward=104 val=None elapsed=56.9s
+cartpole ep=600 steps=46977 reward=106 val=111.55 elapsed=58.4s
+cartpole ep=610 steps=48312 reward=122 val=None elapsed=59.6s
+cartpole ep=620 steps=49578 reward=116 val=None elapsed=60.6s
+cartpole ep=630 steps=50941 reward=95 val=None elapsed=62.5s
+cartpole ep=640 steps=52035 reward=132 val=None elapsed=63.4s
+cartpole ep=650 steps=53398 reward=114 val=125.3 elapsed=65.2s
+cartpole ep=660 steps=54696 reward=135 val=None elapsed=66.3s
+cartpole ep=670 steps=56219 reward=185 val=None elapsed=67.5s
+cartpole ep=680 steps=57448 reward=107 val=None elapsed=69.1s
+cartpole ep=690 steps=58435 reward=102 val=None elapsed=69.9s
+cartpole ep=700 steps=59559 reward=122 val=117.85 elapsed=71.5s
+cartpole ep=710 steps=60921 reward=134 val=None elapsed=72.6s
+cartpole ep=720 steps=62306 reward=109 val=None elapsed=73.7s
+cartpole ep=730 steps=63806 reward=42 val=None elapsed=75.6s
+cartpole ep=740 steps=65687 reward=219 val=None elapsed=77.3s
+cartpole ep=750 steps=67036 reward=61 val=114.1 elapsed=79.2s
+cartpole ep=760 steps=68383 reward=10 val=None elapsed=80.6s
+cartpole ep=770 steps=69541 reward=129 val=None elapsed=81.6s
+cartpole ep=780 steps=70967 reward=143 val=None elapsed=83.7s
+cartpole ep=790 steps=72163 reward=73 val=None elapsed=84.7s
+cartpole ep=800 steps=73568 reward=176 val=159.7 elapsed=86.7s
+cartpole ep=810 steps=75045 reward=129 val=None elapsed=87.9s
+cartpole ep=820 steps=76936 reward=60 val=None elapsed=89.7s
+cartpole ep=830 steps=78596 reward=227 val=None elapsed=92.1s
+cartpole ep=840 steps=79930 reward=137 val=None elapsed=93.2s
+cartpole ep=850 steps=81221 reward=19 val=15.75 elapsed=94.3s
+cartpole ep=860 steps=82993 reward=147 val=None elapsed=95.8s
+cartpole ep=870 steps=84336 reward=136 val=None elapsed=96.9s
+cartpole ep=880 steps=85448 reward=108 val=None elapsed=98.2s
+cartpole ep=890 steps=86158 reward=28 val=None elapsed=98.8s
+cartpole ep=900 steps=87349 reward=37 val=22.2 elapsed=99.9s
+cartpole ep=910 steps=89144 reward=34 val=None elapsed=101.6s
+cartpole ep=920 steps=91018 reward=280 val=None elapsed=103.4s
+cartpole ep=930 steps=92412 reward=128 val=None elapsed=105.6s
+cartpole ep=940 steps=93854 reward=160 val=None elapsed=106.9s
+cartpole ep=950 steps=95156 reward=291 val=145.2 elapsed=109.0s
+cartpole ep=960 steps=95960 reward=58 val=None elapsed=109.8s
+cartpole ep=970 steps=96376 reward=37 val=None elapsed=110.2s
+cartpole ep=980 steps=96728 reward=16 val=None elapsed=110.7s
+cartpole ep=990 steps=97800 reward=198 val=None elapsed=111.7s
+cartpole ep=1000 steps=100006 reward=284 val=185.55 elapsed=114.9s
+cartpole ep=1010 steps=101982 reward=210 val=None elapsed=116.7s
+cartpole ep=1020 steps=104466 reward=206 val=None elapsed=118.7s
+cartpole ep=1030 steps=106256 reward=194 val=None elapsed=121.6s
+cartpole ep=1040 steps=107684 reward=215 val=None elapsed=123.0s
+cartpole ep=1050 steps=109597 reward=23 val=120.05 elapsed=125.5s
+cartpole ep=1060 steps=110848 reward=132 val=None elapsed=126.7s
+cartpole ep=1070 steps=112764 reward=192 val=None elapsed=128.4s
+cartpole ep=1080 steps=114051 reward=166 val=None elapsed=131.0s
+cartpole ep=1090 steps=115466 reward=118 val=None elapsed=132.1s
+cartpole ep=1100 steps=116467 reward=70 val=45.9 elapsed=133.2s
+cartpole ep=1110 steps=117338 reward=40 val=None elapsed=133.9s
+cartpole ep=1120 steps=118911 reward=227 val=None elapsed=135.2s
+cartpole ep=1130 steps=121104 reward=208 val=None elapsed=137.7s
+cartpole ep=1140 steps=122276 reward=35 val=None elapsed=138.7s
+cartpole ep=1150 steps=123573 reward=122 val=136.15 elapsed=140.5s
+cartpole ep=1160 steps=125265 reward=97 val=None elapsed=141.9s
+cartpole ep=1170 steps=127041 reward=126 val=None elapsed=143.3s
+cartpole ep=1180 steps=128205 reward=54 val=None elapsed=145.9s
+cartpole ep=1190 steps=130093 reward=198 val=None elapsed=147.4s
+cartpole ep=1200 steps=131855 reward=217 val=198.8 elapsed=150.0s
+cartpole ep=1210 steps=133496 reward=138 val=None elapsed=151.3s
+cartpole ep=1220 steps=135385 reward=355 val=None elapsed=152.9s
+cartpole ep=1230 steps=136997 reward=130 val=None elapsed=155.4s
+cartpole ep=1240 steps=138391 reward=233 val=None elapsed=156.5s
+cartpole ep=1250 steps=139763 reward=128 val=390.7 elapsed=159.8s
+cartpole ep=1260 steps=141219 reward=125 val=None elapsed=161.2s
+cartpole ep=1270 steps=142361 reward=118 val=None elapsed=162.3s
+cartpole ep=1280 steps=143745 reward=141 val=None elapsed=164.1s
+cartpole ep=1290 steps=146198 reward=314 val=None elapsed=166.1s
+cartpole ep=1300 steps=147737 reward=161 val=127.1 elapsed=168.1s
+cartpole ep=1310 steps=149432 reward=143 val=None elapsed=169.8s
+cartpole ep=1320 steps=151145 reward=131 val=None elapsed=171.4s
+cartpole ep=1330 steps=152765 reward=172 val=None elapsed=173.7s
+cartpole ep=1340 steps=154824 reward=168 val=None elapsed=175.7s
+cartpole ep=1350 steps=157212 reward=161 val=127.45 elapsed=178.3s
+cartpole ep=1360 steps=159508 reward=278 val=None elapsed=180.2s
+cartpole ep=1370 steps=162086 reward=238 val=None elapsed=182.3s
+cartpole ep=1380 steps=163893 reward=247 val=None elapsed=184.7s
+cartpole ep=1390 steps=165631 reward=35 val=None elapsed=186.2s
+cartpole ep=1400 steps=168212 reward=156 val=163.15 elapsed=189.1s
+cartpole ep=1410 steps=169979 reward=209 val=None elapsed=190.6s
+cartpole ep=1420 steps=172402 reward=244 val=None elapsed=192.6s
+cartpole ep=1430 steps=175308 reward=178 val=None elapsed=195.9s
+cartpole ep=1440 steps=177781 reward=377 val=None elapsed=197.9s
+cartpole ep=1450 steps=179275 reward=67 val=236.55 elapsed=200.4s
+cartpole ep=1460 steps=180485 reward=496 val=None elapsed=201.4s
+cartpole ep=1470 steps=182421 reward=80 val=None elapsed=203.0s
+cartpole ep=1480 steps=184606 reward=316 val=None elapsed=207.2s
+cartpole ep=1490 steps=186712 reward=409 val=None elapsed=208.9s
+cartpole ep=1500 steps=189823 reward=463 val=146.35 elapsed=212.2s
+cartpole ep=1510 steps=190477 reward=51 val=None elapsed=212.8s
+cartpole ep=1520 steps=191041 reward=13 val=None elapsed=213.3s
+cartpole ep=1530 steps=192005 reward=133 val=None elapsed=214.7s
+cartpole ep=1540 steps=192840 reward=34 val=None elapsed=215.4s
+cartpole ep=1550 steps=194007 reward=118 val=77.05 elapsed=216.8s
+cartpole ep=1560 steps=196342 reward=500 val=None elapsed=218.7s
+cartpole ep=1570 steps=199489 reward=458 val=None elapsed=221.2s
+cartpole ep=1580 steps=201919 reward=27 val=None elapsed=224.6s
+cartpole ep=1590 steps=204711 reward=351 val=None elapsed=226.9s
+cartpole ep=1600 steps=206899 reward=170 val=140.15 elapsed=229.4s
+cartpole ep=1610 steps=208336 reward=163 val=None elapsed=230.6s
+cartpole ep=1620 steps=210352 reward=15 val=None elapsed=232.5s
+cartpole ep=1630 steps=213307 reward=239 val=None elapsed=236.3s
+cartpole ep=1640 steps=215525 reward=284 val=None elapsed=238.4s
+cartpole ep=1650 steps=219384 reward=500 val=420.65 elapsed=244.5s
+cartpole ep=1660 steps=222376 reward=500 val=None elapsed=247.1s
+cartpole ep=1670 steps=224732 reward=270 val=None elapsed=249.0s
+A.L.E: Arcade Learning Environment (version 0.12.1+8a8fafb)
+[Powered by Stella]
+mspacman ep=10 steps=4674 reward=170 val=None elapsed=7.7s
+mspacman ep=20 steps=10016 reward=340 val=None elapsed=16.2s
+mspacman ep=30 steps=14752 reward=260 val=None elapsed=23.8s
+mspacman ep=40 steps=19866 reward=250 val=None elapsed=32.0s
+mspacman ep=50 steps=24772 reward=300 val=None elapsed=46.3s
+mspacman ep=60 steps=29680 reward=200 val=None elapsed=60.6s
+mspacman ep=70 steps=34788 reward=200 val=None elapsed=76.1s
+mspacman ep=80 steps=39434 reward=220 val=None elapsed=89.4s
+mspacman ep=90 steps=44448 reward=250 val=None elapsed=104.1s
+mspacman ep=100 steps=49340 reward=210 val=362.0 elapsed=128.1s
+mspacman ep=110 steps=54492 reward=290 val=None elapsed=143.1s
+mspacman ep=120 steps=59818 reward=650 val=None elapsed=158.1s
+mspacman ep=130 steps=64794 reward=240 val=None elapsed=172.3s
+mspacman ep=140 steps=69738 reward=260 val=None elapsed=186.5s
+mspacman ep=150 steps=75044 reward=310 val=None elapsed=202.0s
+mspacman ep=160 steps=80610 reward=200 val=None elapsed=218.3s
+mspacman ep=170 steps=85598 reward=520 val=None elapsed=232.4s
+mspacman ep=180 steps=90666 reward=360 val=None elapsed=247.6s
+mspacman ep=190 steps=96124 reward=350 val=None elapsed=263.0s
+mspacman ep=200 steps=101500 reward=240 val=688.0 elapsed=288.2s
+mspacman ep=210 steps=106572 reward=160 val=None elapsed=303.1s
+mspacman ep=220 steps=111550 reward=330 val=None elapsed=317.4s
+mspacman ep=230 steps=116618 reward=300 val=None elapsed=331.7s
+mspacman ep=240 steps=121256 reward=230 val=None elapsed=344.9s
+mspacman ep=250 steps=126066 reward=270 val=None elapsed=359.3s
+mspacman ep=260 steps=131342 reward=950 val=None elapsed=375.1s
+mspacman ep=270 steps=136446 reward=260 val=None elapsed=390.1s
+mspacman ep=280 steps=141840 reward=450 val=None elapsed=405.6s
+mspacman ep=290 steps=147194 reward=660 val=None elapsed=421.0s
+mspacman ep=300 steps=151632 reward=220 val=575.0 elapsed=445.0s
+mspacman ep=310 steps=156706 reward=300 val=None elapsed=459.8s
+mspacman ep=320 steps=162628 reward=190 val=None elapsed=476.3s
+mspacman ep=330 steps=167988 reward=360 val=None elapsed=492.1s
+mspacman ep=340 steps=172812 reward=420 val=None elapsed=505.9s
+mspacman ep=350 steps=178194 reward=310 val=None elapsed=521.1s
+mspacman ep=360 steps=183716 reward=310 val=None elapsed=537.1s
+mspacman ep=370 steps=188890 reward=330 val=None elapsed=551.7s
+mspacman ep=380 steps=194314 reward=630 val=None elapsed=567.8s
+mspacman ep=390 steps=199038 reward=260 val=None elapsed=581.5s
+mspacman ep=400 steps=204388 reward=370 val=445.0 elapsed=606.2s
+mspacman ep=410 steps=209582 reward=490 val=None elapsed=622.0s
+mspacman ep=420 steps=214740 reward=280 val=None elapsed=637.1s
+mspacman ep=430 steps=219886 reward=260 val=None elapsed=651.7s
+mspacman ep=440 steps=225174 reward=690 val=None elapsed=666.8s
+mspacman ep=450 steps=230424 reward=280 val=None elapsed=681.8s
+mspacman ep=460 steps=236078 reward=320 val=None elapsed=698.1s
+mspacman ep=470 steps=242078 reward=1130 val=None elapsed=715.0s
+mspacman ep=480 steps=247588 reward=300 val=None elapsed=730.6s
+mspacman ep=490 steps=253644 reward=580 val=None elapsed=748.1s
+mspacman ep=500 steps=259022 reward=250 val=1001.0 elapsed=774.3s
+mspacman ep=510 steps=264022 reward=250 val=None elapsed=789.2s
+mspacman ep=520 steps=268902 reward=420 val=None elapsed=803.3s
+mspacman ep=530 steps=273788 reward=310 val=None elapsed=817.4s
+mspacman ep=540 steps=279510 reward=430 val=None elapsed=833.6s
+mspacman ep=550 steps=284852 reward=670 val=None elapsed=848.7s
+mspacman ep=560 steps=290476 reward=320 val=None elapsed=864.5s
+mspacman ep=570 steps=295328 reward=290 val=None elapsed=878.6s
+mspacman ep=580 steps=301016 reward=360 val=None elapsed=895.2s
+mspacman ep=590 steps=306768 reward=1290 val=None elapsed=912.3s
+mspacman ep=600 steps=312196 reward=260 val=762.0 elapsed=937.8s
+mspacman ep=610 steps=317216 reward=310 val=None elapsed=952.6s
+mspacman ep=620 steps=322862 reward=290 val=None elapsed=968.9s
+mspacman ep=630 steps=329218 reward=430 val=None elapsed=987.4s
+mspacman ep=640 steps=334458 reward=360 val=None elapsed=1002.5s
+mspacman ep=650 steps=340734 reward=1530 val=None elapsed=1020.5s
+mspacman ep=660 steps=346504 reward=300 val=None elapsed=1037.6s
+mspacman ep=670 steps=352208 reward=170 val=None elapsed=1054.5s
+mspacman ep=680 steps=358934 reward=1060 val=None elapsed=1073.2s
+mspacman ep=690 steps=365064 reward=1260 val=None elapsed=1090.5s
+mspacman ep=700 steps=370522 reward=180 val=698.0 elapsed=1115.9s
+mspacman ep=710 steps=376026 reward=620 val=None elapsed=1131.9s
+mspacman ep=720 steps=382048 reward=890 val=None elapsed=1149.6s
+mspacman ep=730 steps=387524 reward=260 val=None elapsed=1165.9s
+mspacman ep=740 steps=393514 reward=410 val=None elapsed=1182.8s
+mspacman ep=750 steps=399064 reward=340 val=None elapsed=1199.0s
+mspacman ep=760 steps=405558 reward=360 val=None elapsed=1218.1s
+mspacman ep=770 steps=411704 reward=300 val=None elapsed=1235.7s
+mspacman ep=780 steps=417954 reward=1880 val=None elapsed=1253.1s
+mspacman ep=790 steps=423766 reward=520 val=None elapsed=1269.8s
+mspacman ep=800 steps=428848 reward=480 val=755.0 elapsed=1293.4s
+mspacman ep=810 steps=434712 reward=1080 val=None elapsed=1310.3s
+mspacman ep=820 steps=440548 reward=400 val=None elapsed=1326.7s
+mspacman ep=830 steps=446268 reward=970 val=None elapsed=1342.8s
+mspacman ep=840 steps=451526 reward=430 val=None elapsed=1357.8s
+mspacman ep=850 steps=457272 reward=200 val=None elapsed=1374.1s
+mspacman ep=860 steps=463310 reward=510 val=None elapsed=1391.1s
+mspacman ep=870 steps=469842 reward=660 val=None elapsed=1409.3s
+mspacman ep=880 steps=476008 reward=790 val=None elapsed=1427.6s
+mspacman ep=890 steps=482176 reward=330 val=None elapsed=1445.1s
+mspacman ep=900 steps=487910 reward=730 val=901.0 elapsed=1472.7s
+mspacman ep=910 steps=494354 reward=170 val=None elapsed=1492.2s
+mspacman ep=920 steps=500632 reward=250 val=None elapsed=1510.1s
+mspacman ep=930 steps=506726 reward=620 val=None elapsed=1527.1s
+mspacman ep=940 steps=512764 reward=200 val=None elapsed=1544.6s
+mspacman ep=950 steps=520038 reward=420 val=None elapsed=1565.2s
+mspacman ep=960 steps=525588 reward=240 val=None elapsed=1581.0s
+mspacman ep=970 steps=531410 reward=330 val=None elapsed=1597.4s
+mspacman ep=980 steps=537386 reward=800 val=None elapsed=1614.6s
+mspacman ep=990 steps=543562 reward=440 val=None elapsed=1631.9s
+mspacman ep=1000 steps=549646 reward=450 val=771.0 elapsed=1659.5s
+mspacman ep=1010 steps=555790 reward=540 val=None elapsed=1677.6s
+mspacman ep=1020 steps=561192 reward=370 val=None elapsed=1693.4s
+mspacman ep=1030 steps=566888 reward=610 val=None elapsed=1710.1s
+mspacman ep=1040 steps=573302 reward=340 val=None elapsed=1729.2s
+mspacman ep=1050 steps=579750 reward=880 val=None elapsed=1747.3s
+mspacman ep=1060 steps=586574 reward=420 val=None elapsed=1767.2s
+mspacman ep=1070 steps=592230 reward=720 val=None elapsed=1783.3s
+mspacman ep=1080 steps=597454 reward=430 val=None elapsed=1798.7s
+mspacman ep=1090 steps=603512 reward=400 val=None elapsed=1816.4s
+mspacman ep=1100 steps=608848 reward=1100 val=964.0 elapsed=1841.6s
+mspacman ep=1110 steps=614080 reward=590 val=None elapsed=1857.6s
+mspacman ep=1120 steps=620718 reward=890 val=None elapsed=1876.4s
+mspacman ep=1130 steps=626766 reward=1000 val=None elapsed=1893.4s
+mspacman ep=1140 steps=633716 reward=460 val=None elapsed=1913.5s
+mspacman ep=1150 steps=640186 reward=840 val=None elapsed=1932.2s
+mspacman ep=1160 steps=646022 reward=750 val=None elapsed=1948.7s
+mspacman ep=1170 steps=652712 reward=550 val=None elapsed=1967.6s
+mspacman ep=1180 steps=658756 reward=380 val=None elapsed=1984.7s
+mspacman ep=1190 steps=664522 reward=490 val=None elapsed=2001.0s
+mspacman ep=1200 steps=670442 reward=490 val=960.0 elapsed=2027.9s
+mspacman ep=1210 steps=676306 reward=630 val=None elapsed=2045.6s
+mspacman ep=1220 steps=682588 reward=320 val=None elapsed=2064.4s
+mspacman ep=1230 steps=688962 reward=730 val=None elapsed=2082.6s
+mspacman ep=1240 steps=694928 reward=510 val=None elapsed=2100.0s
+mspacman ep=1250 steps=700874 reward=1070 val=None elapsed=2116.7s
+mspacman ep=1260 steps=707248 reward=750 val=None elapsed=2134.6s
+mspacman ep=1270 steps=714164 reward=1070 val=None elapsed=2154.6s
+mspacman ep=1280 steps=720064 reward=660 val=None elapsed=2171.4s
+mspacman ep=1290 steps=726892 reward=540 val=None elapsed=2191.2s
+mspacman ep=1300 steps=732398 reward=500 val=999.0 elapsed=2218.1s
+mspacman ep=1310 steps=737758 reward=340 val=None elapsed=2234.3s
+mspacman ep=1320 steps=743234 reward=290 val=None elapsed=2250.0s
+mspacman ep=1330 steps=748854 reward=960 val=None elapsed=2266.3s
+mspacman ep=1340 steps=755258 reward=1060 val=None elapsed=2284.2s
+mspacman ep=1350 steps=761300 reward=410 val=None elapsed=2301.8s
+mspacman ep=1360 steps=766818 reward=570 val=None elapsed=2317.5s
+mspacman ep=1370 steps=772592 reward=1070 val=None elapsed=2334.5s
+mspacman ep=1380 steps=778198 reward=490 val=None elapsed=2351.0s
+mspacman ep=1390 steps=784522 reward=1230 val=None elapsed=2368.8s
+mspacman ep=1400 steps=791034 reward=920 val=677.0 elapsed=2396.4s
+mspacman ep=1410 steps=797048 reward=1340 val=None elapsed=2414.0s
+mspacman ep=1420 steps=804424 reward=1920 val=None elapsed=2434.8s
+mspacman ep=1430 steps=811284 reward=960 val=None elapsed=2454.5s
+mspacman ep=1440 steps=817688 reward=390 val=None elapsed=2473.0s
+mspacman ep=1450 steps=825398 reward=970 val=None elapsed=2494.5s
+mspacman ep=1460 steps=832576 reward=960 val=None elapsed=2515.9s
+mspacman ep=1470 steps=838942 reward=650 val=None elapsed=2535.3s
+mspacman ep=1480 steps=845296 reward=690 val=None elapsed=2554.2s
+mspacman ep=1490 steps=852206 reward=1030 val=None elapsed=2573.7s
+mspacman ep=1500 steps=858302 reward=680 val=891.0 elapsed=2600.1s
+mspacman ep=1510 steps=865420 reward=570 val=None elapsed=2620.8s
+mspacman ep=1520 steps=871824 reward=2150 val=None elapsed=2638.8s
+mspacman ep=1530 steps=878722 reward=810 val=None elapsed=2658.2s
+mspacman ep=1540 steps=884482 reward=560 val=None elapsed=2674.5s
+mspacman ep=1550 steps=891434 reward=380 val=None elapsed=2694.7s
+mspacman ep=1560 steps=897024 reward=500 val=None elapsed=2711.2s
+mspacman ep=1570 steps=903848 reward=610 val=None elapsed=2731.1s
+mspacman ep=1580 steps=910182 reward=870 val=None elapsed=2749.8s
+mspacman ep=1590 steps=915834 reward=1780 val=None elapsed=2765.9s
+mspacman ep=1600 steps=923020 reward=1620 val=666.0 elapsed=2794.1s
+mspacman ep=1610 steps=929918 reward=1150 val=None elapsed=2814.6s
+mspacman ep=1620 steps=936064 reward=1070 val=None elapsed=2832.0s
+mspacman ep=1630 steps=942874 reward=1570 val=None elapsed=2851.2s
+mspacman ep=1640 steps=950508 reward=1920 val=None elapsed=2873.4s
+mspacman ep=1650 steps=955796 reward=750 val=None elapsed=2888.7s
+mspacman ep=1660 steps=961666 reward=650 val=None elapsed=2905.3s
+mspacman ep=1670 steps=968260 reward=680 val=None elapsed=2924.3s
+mspacman ep=1680 steps=975020 reward=1250 val=None elapsed=2943.8s
+mspacman ep=1690 steps=981654 reward=1490 val=None elapsed=2962.8s
+mspacman ep=1700 steps=987606 reward=560 val=1500.0 elapsed=2991.8s
+mspacman ep=1710 steps=993720 reward=760 val=None elapsed=3010.5s
+mspacman ep=1720 steps=1000022 reward=960 val=None elapsed=3028.4s
+mspacman ep=1730 steps=1007364 reward=1870 val=None elapsed=3049.7s
+mspacman ep=1740 steps=1013268 reward=1020 val=None elapsed=3067.4s
+mspacman ep=1750 steps=1019884 reward=670 val=None elapsed=3086.3s
+mspacman ep=1760 steps=1025812 reward=700 val=None elapsed=3103.3s
+mspacman ep=1770 steps=1032954 reward=890 val=None elapsed=3123.2s
+mspacman ep=1780 steps=1038924 reward=720 val=None elapsed=3140.1s
+mspacman ep=1790 steps=1045612 reward=1220 val=None elapsed=3159.1s
+mspacman ep=1800 steps=1052080 reward=1310 val=1036.0 elapsed=3186.7s
+mspacman ep=1810 steps=1059034 reward=1280 val=None elapsed=3206.6s
+mspacman ep=1820 steps=1065054 reward=1170 val=None elapsed=3223.8s
+mspacman ep=1830 steps=1071612 reward=560 val=None elapsed=3242.2s
+mspacman ep=1840 steps=1077642 reward=500 val=None elapsed=3259.4s
+mspacman ep=1850 steps=1084094 reward=530 val=None elapsed=3277.6s
+mspacman ep=1860 steps=1089082 reward=510 val=None elapsed=3292.3s
+mspacman ep=1870 steps=1095602 reward=900 val=None elapsed=3311.5s
+mspacman ep=1880 steps=1102228 reward=790 val=None elapsed=3330.3s
+mspacman ep=1890 steps=1109484 reward=1290 val=None elapsed=3351.3s
+mspacman ep=1900 steps=1117122 reward=1480 val=1512.0 elapsed=3384.3s
+mspacman ep=1910 steps=1124182 reward=800 val=None elapsed=3405.3s
+mspacman ep=1920 steps=1131284 reward=1410 val=None elapsed=3425.2s
+mspacman ep=1930 steps=1138722 reward=1810 val=None elapsed=3445.9s
+mspacman ep=1940 steps=1145290 reward=1160 val=None elapsed=3464.9s
+mspacman ep=1950 steps=1152688 reward=1080 val=None elapsed=3486.6s
+mspacman ep=1960 steps=1159808 reward=740 val=None elapsed=3506.9s
+mspacman ep=1970 steps=1167136 reward=2490 val=None elapsed=3527.4s
+mspacman ep=1980 steps=1175244 reward=1170 val=None elapsed=3550.1s
+mspacman ep=1990 steps=1181354 reward=1360 val=None elapsed=3567.7s
+mspacman ep=2000 steps=1188600 reward=1180 val=1247.0 elapsed=3598.5s
+mspacman ep=2010 steps=1195418 reward=860 val=None elapsed=3618.5s
+mspacman ep=2020 steps=1202372 reward=1020 val=None elapsed=3638.5s
+mspacman ep=2030 steps=1209516 reward=970 val=None elapsed=3660.1s
+mspacman ep=2040 steps=1215548 reward=960 val=None elapsed=3677.1s
+mspacman ep=2050 steps=1223854 reward=930 val=None elapsed=3700.3s
+mspacman ep=2060 steps=1230678 reward=1370 val=None elapsed=3719.5s
+mspacman ep=2070 steps=1236712 reward=690 val=None elapsed=3736.6s
+mspacman ep=2080 steps=1243624 reward=1240 val=None elapsed=3756.4s
+mspacman ep=2090 steps=1251286 reward=880 val=None elapsed=3777.9s
+mspacman ep=2100 steps=1257892 reward=940 val=1332.0 elapsed=3809.8s
+mspacman ep=2110 steps=1265322 reward=1220 val=None elapsed=3831.1s
+mspacman ep=2120 steps=1272438 reward=1340 val=None elapsed=3851.3s
+mspacman ep=2130 steps=1279494 reward=1140 val=None elapsed=3871.0s
+mspacman ep=2140 steps=1286976 reward=1360 val=None elapsed=3892.1s
+mspacman ep=2150 steps=1294102 reward=1610 val=None elapsed=3912.7s
+mspacman ep=2160 steps=1300450 reward=1440 val=None elapsed=3930.8s
+mspacman ep=2170 steps=1306636 reward=2410 val=None elapsed=3948.8s
+mspacman ep=2180 steps=1313850 reward=780 val=None elapsed=3969.4s
+mspacman ep=2190 steps=1321138 reward=1330 val=None elapsed=3989.9s
+mspacman ep=2200 steps=1328054 reward=900 val=1106.0 elapsed=4020.5s
+mspacman ep=2210 steps=1336040 reward=1500 val=None elapsed=4043.9s
+mspacman ep=2220 steps=1343828 reward=1730 val=None elapsed=4065.8s
+mspacman ep=2230 steps=1349480 reward=700 val=None elapsed=4082.8s
+mspacman ep=2240 steps=1355952 reward=1190 val=None elapsed=4100.9s
+mspacman ep=2250 steps=1362766 reward=920 val=None elapsed=4120.4s
+mspacman ep=2260 steps=1369332 reward=1200 val=None elapsed=4138.9s
+mspacman ep=2270 steps=1376116 reward=1120 val=None elapsed=4157.9s
+mspacman ep=2280 steps=1382724 reward=2130 val=None elapsed=4177.0s
+mspacman ep=2290 steps=1390166 reward=1130 val=None elapsed=4198.2s
+mspacman ep=2300 steps=1396850 reward=950 val=1776.0 elapsed=4228.3s
+mspacman ep=2310 steps=1403344 reward=980 val=None elapsed=4247.8s
+mspacman ep=2320 steps=1410634 reward=810 val=None elapsed=4268.5s
+mspacman ep=2330 steps=1417886 reward=1340 val=None elapsed=4288.9s
+mspacman ep=2340 steps=1424582 reward=1620 val=None elapsed=4308.9s
+mspacman ep=2350 steps=1431950 reward=960 val=None elapsed=4329.8s
+mspacman ep=2360 steps=1438308 reward=1060 val=None elapsed=4347.9s
+mspacman ep=2370 steps=1445734 reward=1370 val=None elapsed=4368.9s
+mspacman ep=2380 steps=1453020 reward=950 val=None elapsed=4389.9s
+mspacman ep=2390 steps=1459452 reward=1100 val=None elapsed=4408.2s
+mspacman ep=2400 steps=1466908 reward=1160 val=1212.0 elapsed=4441.4s
+mspacman ep=2410 steps=1474480 reward=1610 val=None elapsed=4463.7s
+mspacman ep=2420 steps=1480972 reward=1070 val=None elapsed=4481.9s
+mspacman ep=2430 steps=1488372 reward=1200 val=None elapsed=4502.9s
+mspacman ep=2440 steps=1495676 reward=1810 val=None elapsed=4523.2s
+mspacman ep=2450 steps=1502146 reward=1220 val=None elapsed=4541.6s
+mspacman ep=2460 steps=1509320 reward=1240 val=None elapsed=4562.0s
+mspacman ep=2470 steps=1517814 reward=2500 val=None elapsed=4586.0s
+mspacman ep=2480 steps=1524998 reward=1500 val=None elapsed=4606.0s
+mspacman ep=2490 steps=1532396 reward=1060 val=None elapsed=4627.0s
+mspacman ep=2500 steps=1539018 reward=990 val=1562.0 elapsed=4657.3s
+mspacman ep=2510 steps=1546780 reward=1020 val=None elapsed=4680.2s
+mspacman ep=2520 steps=1553186 reward=2420 val=None elapsed=4698.2s
+mspacman ep=2530 steps=1559952 reward=1100 val=None elapsed=4717.7s
+mspacman ep=2540 steps=1567306 reward=1980 val=None elapsed=4738.6s
+mspacman ep=2550 steps=1575026 reward=2430 val=None elapsed=4760.3s
+mspacman ep=2560 steps=1581970 reward=1000 val=None elapsed=4780.9s
+mspacman ep=2570 steps=1589438 reward=1250 val=None elapsed=4801.9s
+mspacman ep=2580 steps=1597530 reward=1850 val=None elapsed=4824.6s
+mspacman ep=2590 steps=1604140 reward=1140 val=None elapsed=4843.5s
+mspacman ep=2600 steps=1610796 reward=560 val=1938.0 elapsed=4874.2s
+mspacman ep=2610 steps=1617748 reward=1710 val=None elapsed=4894.2s
+mspacman ep=2620 steps=1625978 reward=880 val=None elapsed=4917.6s
+mspacman ep=2630 steps=1633704 reward=2370 val=None elapsed=4939.9s
+mspacman ep=2640 steps=1641804 reward=1750 val=None elapsed=4962.5s
+mspacman ep=2650 steps=1650134 reward=1510 val=None elapsed=4985.7s
+mspacman ep=2660 steps=1657320 reward=1840 val=None elapsed=5005.8s
+mspacman ep=2670 steps=1663420 reward=1100 val=None elapsed=5023.4s
+mspacman ep=2680 steps=1670768 reward=1610 val=None elapsed=5044.1s
+mspacman ep=2690 steps=1677770 reward=760 val=None elapsed=5064.4s
+mspacman ep=2700 steps=1685062 reward=920 val=1119.0 elapsed=5095.0s
+mspacman ep=2710 steps=1692560 reward=900 val=None elapsed=5116.3s
+mspacman ep=2720 steps=1699614 reward=980 val=None elapsed=5136.0s
+mspacman ep=2730 steps=1706918 reward=980 val=None elapsed=5157.5s
+mspacman ep=2740 steps=1714102 reward=960 val=None elapsed=5178.1s
+mspacman ep=2750 steps=1721006 reward=1230 val=None elapsed=5197.5s
+mspacman ep=2760 steps=1728634 reward=1050 val=None elapsed=5218.7s
+mspacman ep=2770 steps=1735716 reward=1720 val=None elapsed=5238.9s
+mspacman ep=2780 steps=1742602 reward=1550 val=None elapsed=5258.6s
+mspacman ep=2790 steps=1750296 reward=870 val=None elapsed=5280.4s
+mspacman ep=2800 steps=1758172 reward=980 val=1425.0 elapsed=5314.4s
+mspacman ep=2810 steps=1766094 reward=1280 val=None elapsed=5337.6s
+mspacman ep=2820 steps=1773610 reward=1210 val=None elapsed=5359.2s
+mspacman ep=2830 steps=1780430 reward=1650 val=None elapsed=5378.2s
+mspacman ep=2840 steps=1787114 reward=700 val=None elapsed=5397.0s
+mspacman ep=2850 steps=1793688 reward=1260 val=None elapsed=5415.8s
+mspacman ep=2860 steps=1800294 reward=890 val=None elapsed=5435.1s
+mspacman ep=2870 steps=1807310 reward=1930 val=None elapsed=5455.0s
+mspacman ep=2880 steps=1813986 reward=1270 val=None elapsed=5473.8s
+mspacman ep=2890 steps=1820970 reward=1310 val=None elapsed=5493.4s
+mspacman ep=2900 steps=1828456 reward=1360 val=1522.0 elapsed=5525.5s
+mspacman ep=2910 steps=1835902 reward=1590 val=None elapsed=5547.0s
+mspacman ep=2920 steps=1843408 reward=1050 val=None elapsed=5568.2s
+mspacman ep=2930 steps=1850876 reward=1380 val=None elapsed=5589.4s
+mspacman ep=2940 steps=1857278 reward=1510 val=None elapsed=5607.5s
+mspacman ep=2950 steps=1864818 reward=1330 val=None elapsed=5628.7s
+mspacman ep=2960 steps=1872394 reward=1510 val=None elapsed=5649.8s
+mspacman ep=2970 steps=1880000 reward=1070 val=None elapsed=5671.2s
+mspacman ep=2980 steps=1887418 reward=1930 val=None elapsed=5691.9s
+mspacman ep=2990 steps=1893780 reward=1070 val=None elapsed=5709.9s
+mspacman ep=3000 steps=1900440 reward=1030 val=1296.0 elapsed=5739.0s
+mspacman ep=3010 steps=1907834 reward=1190 val=None elapsed=5760.5s
+mspacman ep=3020 steps=1915158 reward=1120 val=None elapsed=5781.1s
+mspacman ep=3030 steps=1922854 reward=1160 val=None elapsed=5802.7s
+mspacman ep=3040 steps=1930066 reward=1170 val=None elapsed=5822.8s
+mspacman ep=3050 steps=1937630 reward=1310 val=None elapsed=5844.1s
+mspacman ep=3060 steps=1945540 reward=950 val=None elapsed=5866.4s
+mspacman ep=3070 steps=1953376 reward=1270 val=None elapsed=5889.7s
+mspacman ep=3080 steps=1960454 reward=1670 val=None elapsed=5909.6s
+mspacman ep=3090 steps=1967454 reward=770 val=None elapsed=5929.3s
+mspacman ep=3100 steps=1974104 reward=1350 val=1134.0 elapsed=5958.8s
+mspacman ep=3110 steps=1980704 reward=1200 val=None elapsed=5977.8s
+mspacman ep=3120 steps=1987920 reward=1260 val=None elapsed=5998.4s
+mspacman ep=3130 steps=1995076 reward=1080 val=None elapsed=6019.2s
+mspacman ep=3140 steps=2001664 reward=1410 val=None elapsed=6038.5s
+mspacman ep=3150 steps=2008538 reward=1160 val=None elapsed=6058.9s
+mspacman ep=3160 steps=2015398 reward=1600 val=None elapsed=6078.3s
+mspacman ep=3170 steps=2022704 reward=2970 val=None elapsed=6099.1s
+mspacman ep=3180 steps=2029664 reward=1560 val=None elapsed=6118.9s
+mspacman ep=3190 steps=2037324 reward=1440 val=None elapsed=6140.8s
+mspacman ep=3200 steps=2043982 reward=720 val=1286.0 elapsed=6170.2s
+mspacman ep=3210 steps=2050474 reward=880 val=None elapsed=6189.1s
+mspacman ep=3220 steps=2058286 reward=1790 val=None elapsed=6210.9s
+mspacman ep=3230 steps=2066484 reward=1290 val=None elapsed=6233.9s
+mspacman ep=3240 steps=2074440 reward=1830 val=None elapsed=6256.2s
+mspacman ep=3250 steps=2082050 reward=1520 val=None elapsed=6277.5s
+mspacman ep=3260 steps=2089770 reward=1100 val=None elapsed=6299.1s
+mspacman ep=3270 steps=2097172 reward=1030 val=None elapsed=6319.9s
+mspacman ep=3280 steps=2103526 reward=1460 val=None elapsed=6337.7s
+mspacman ep=3290 steps=2110946 reward=1230 val=None elapsed=6358.9s
+mspacman ep=3300 steps=2118588 reward=1390 val=1459.0 elapsed=6391.8s
+mspacman ep=3310 steps=2126458 reward=1590 val=None elapsed=6414.3s
+mspacman ep=3320 steps=2135058 reward=1710 val=None elapsed=6438.3s
+mspacman ep=3330 steps=2142188 reward=1550 val=None elapsed=6458.7s
+mspacman ep=3340 steps=2149352 reward=1150 val=None elapsed=6479.0s
+mspacman ep=3350 steps=2158092 reward=1610 val=None elapsed=6503.3s
+mspacman ep=3360 steps=2165196 reward=1340 val=None elapsed=6523.2s
+mspacman ep=3370 steps=2173230 reward=1660 val=None elapsed=6545.5s
+mspacman ep=3380 steps=2180550 reward=1530 val=None elapsed=6566.5s
+mspacman ep=3390 steps=2188386 reward=1230 val=None elapsed=6588.7s
+mspacman ep=3400 steps=2195300 reward=2020 val=1352.0 elapsed=6620.1s
+mspacman ep=3410 steps=2203528 reward=1630 val=None elapsed=6644.1s
+mspacman ep=3420 steps=2210562 reward=1180 val=None elapsed=6664.8s
+mspacman ep=3430 steps=2217666 reward=1180 val=None elapsed=6684.7s
+mspacman ep=3440 steps=2224882 reward=1960 val=None elapsed=6705.6s
+mspacman ep=3450 steps=2232170 reward=1160 val=None elapsed=6726.8s
+mspacman ep=3460 steps=2239712 reward=1770 val=None elapsed=6748.5s
+mspacman ep=3470 steps=2247530 reward=1810 val=None elapsed=6770.4s
+mspacman ep=3480 steps=2254836 reward=1410 val=None elapsed=6790.8s
+mspacman ep=3490 steps=2262314 reward=1030 val=None elapsed=6811.6s
+mspacman ep=3500 steps=2269376 reward=1430 val=1266.0 elapsed=6841.7s
+mspacman ep=3510 steps=2277244 reward=1450 val=None elapsed=6864.1s
+mspacman ep=3520 steps=2284300 reward=1100 val=None elapsed=6884.3s
+mspacman ep=3530 steps=2291436 reward=1720 val=None elapsed=6904.6s
+mspacman ep=3540 steps=2299242 reward=1820 val=None elapsed=6926.2s
+mspacman ep=3550 steps=2306982 reward=1490 val=None elapsed=6948.5s
+mspacman ep=3560 steps=2314464 reward=1350 val=None elapsed=6969.6s
+mspacman ep=3570 steps=2322430 reward=1290 val=None elapsed=6992.4s
+mspacman ep=3580 steps=2329254 reward=1350 val=None elapsed=7012.0s
+mspacman ep=3590 steps=2336512 reward=1380 val=None elapsed=7032.3s
+mspacman ep=3600 steps=2343768 reward=1150 val=1712.0 elapsed=7065.4s
+mspacman ep=3610 steps=2351460 reward=3630 val=None elapsed=7088.1s
+mspacman ep=3620 steps=2359702 reward=1220 val=None elapsed=7111.7s
+mspacman ep=3630 steps=2366944 reward=1100 val=None elapsed=7132.2s
+mspacman ep=3640 steps=2374554 reward=1390 val=None elapsed=7154.0s
+mspacman ep=3650 steps=2382666 reward=1420 val=None elapsed=7177.1s
+mspacman ep=3660 steps=2391354 reward=1220 val=None elapsed=7201.0s
+mspacman ep=3670 steps=2398718 reward=1870 val=None elapsed=7221.7s
+mspacman ep=3680 steps=2405886 reward=1920 val=None elapsed=7242.1s
+mspacman ep=3690 steps=2413594 reward=1450 val=None elapsed=7263.9s
+mspacman ep=3700 steps=2421152 reward=1260 val=1511.0 elapsed=7298.0s
+mspacman ep=3710 steps=2428648 reward=1670 val=None elapsed=7319.5s
+mspacman ep=3720 steps=2436888 reward=1320 val=None elapsed=7343.1s
+mspacman ep=3730 steps=2444076 reward=1530 val=None elapsed=7364.4s
+mspacman ep=3740 steps=2452382 reward=940 val=None elapsed=7388.7s
+mspacman ep=3750 steps=2459632 reward=1620 val=None elapsed=7409.0s
+mspacman ep=3760 steps=2467146 reward=1870 val=None elapsed=7429.9s
+mspacman ep=3770 steps=2474450 reward=2200 val=None elapsed=7450.9s
+mspacman ep=3780 steps=2481302 reward=1750 val=None elapsed=7470.4s
+mspacman ep=3790 steps=2489150 reward=1380 val=None elapsed=7493.2s
+mspacman ep=3800 steps=2495758 reward=1450 val=1833.0 elapsed=7522.2s
+mspacman ep=3810 steps=2502958 reward=1370 val=None elapsed=7542.7s
+mspacman ep=3820 steps=2510122 reward=1300 val=None elapsed=7562.7s
+mspacman ep=3830 steps=2517744 reward=1490 val=None elapsed=7585.2s
+mspacman ep=3840 steps=2525484 reward=1970 val=None elapsed=7608.4s
+mspacman ep=3850 steps=2531804 reward=2540 val=None elapsed=7626.6s
+mspacman ep=3860 steps=2538902 reward=1460 val=None elapsed=7646.6s
+mspacman ep=3870 steps=2545762 reward=1480 val=None elapsed=7667.1s
+mspacman ep=3880 steps=2554594 reward=1350 val=None elapsed=7691.8s
+mspacman ep=3890 steps=2562628 reward=1290 val=None elapsed=7714.5s
+mspacman ep=3900 steps=2569858 reward=1340 val=1660.0 elapsed=7747.5s
+mspacman ep=3910 steps=2577786 reward=2030 val=None elapsed=7770.9s
+mspacman ep=3920 steps=2585530 reward=1320 val=None elapsed=7793.1s
+mspacman ep=3930 steps=2593458 reward=1010 val=None elapsed=7815.2s
+mspacman ep=3940 steps=2599714 reward=1190 val=None elapsed=7832.9s
+mspacman ep=3950 steps=2606986 reward=1750 val=None elapsed=7853.3s
+mspacman ep=3960 steps=2614426 reward=4490 val=None elapsed=7874.2s
+mspacman ep=3970 steps=2621462 reward=1400 val=None elapsed=7894.3s
+mspacman ep=3980 steps=2628626 reward=2640 val=None elapsed=7915.1s
+mspacman ep=3990 steps=2635974 reward=1530 val=None elapsed=7935.9s
+mspacman ep=4000 steps=2643256 reward=1220 val=1470.0 elapsed=7967.5s
+mspacman ep=4010 steps=2650742 reward=1190 val=None elapsed=7989.4s
+mspacman ep=4020 steps=2658706 reward=1590 val=None elapsed=8011.9s
+mspacman ep=4030 steps=2667238 reward=1110 val=None elapsed=8035.5s
+mspacman ep=4040 steps=2675104 reward=2010 val=None elapsed=8057.8s
+mspacman ep=4050 steps=2682958 reward=1680 val=None elapsed=8080.1s
+mspacman ep=4060 steps=2691526 reward=1270 val=None elapsed=8104.7s
+mspacman ep=4070 steps=2699662 reward=2310 val=None elapsed=8127.4s
+mspacman ep=4080 steps=2709014 reward=1710 val=None elapsed=8154.5s
+mspacman ep=4090 steps=2717396 reward=1230 val=None elapsed=8177.9s
+mspacman ep=4100 steps=2725212 reward=1460 val=1487.0 elapsed=8211.2s
+mspacman ep=4110 steps=2733736 reward=1930 val=None elapsed=8235.8s
+mspacman ep=4120 steps=2741624 reward=1290 val=None elapsed=8258.0s
+mspacman ep=4130 steps=2750058 reward=1190 val=None elapsed=8281.5s
+mspacman ep=4140 steps=2757860 reward=720 val=None elapsed=8303.8s
+mspacman ep=4150 steps=2766470 reward=3100 val=None elapsed=8328.0s
+mspacman ep=4160 steps=2773778 reward=1910 val=None elapsed=8348.6s
+mspacman ep=4170 steps=2781212 reward=1380 val=None elapsed=8369.5s
+mspacman ep=4180 steps=2789104 reward=1440 val=None elapsed=8392.3s
+mspacman ep=4190 steps=2797788 reward=2460 val=None elapsed=8417.8s
+mspacman ep=4200 steps=2806022 reward=1540 val=1322.0 elapsed=8451.2s
+mspacman ep=4210 steps=2813832 reward=1040 val=None elapsed=8473.9s
+mspacman ep=4220 steps=2821608 reward=1470 val=None elapsed=8495.5s
+mspacman ep=4230 steps=2829364 reward=1270 val=None elapsed=8517.5s
+mspacman ep=4240 steps=2837068 reward=1660 val=None elapsed=8539.3s
+mspacman ep=4250 steps=2844228 reward=2020 val=None elapsed=8559.8s
+mspacman ep=4260 steps=2851644 reward=2090 val=None elapsed=8580.8s
+mspacman ep=4270 steps=2859004 reward=2010 val=None elapsed=8602.0s
+mspacman ep=4280 steps=2867156 reward=1890 val=None elapsed=8624.8s
+mspacman ep=4290 steps=2874648 reward=1620 val=None elapsed=8647.0s
+mspacman ep=4300 steps=2882486 reward=1580 val=1569.0 elapsed=8680.0s
+mspacman ep=4310 steps=2890328 reward=1320 val=None elapsed=8702.6s
+mspacman ep=4320 steps=2897974 reward=1700 val=None elapsed=8725.3s
+mspacman ep=4330 steps=2905950 reward=1650 val=None elapsed=8748.4s
+mspacman ep=4340 steps=2914162 reward=1920 val=None elapsed=8771.3s
+mspacman ep=4350 steps=2922198 reward=1230 val=None elapsed=8793.6s
+mspacman ep=4360 steps=2929224 reward=2500 val=None elapsed=8813.8s
+mspacman ep=4370 steps=2936662 reward=2740 val=None elapsed=8835.2s
+mspacman ep=4380 steps=2944736 reward=1380 val=None elapsed=8858.0s
+mspacman ep=4390 steps=2954024 reward=1330 val=None elapsed=8884.1s
+mspacman ep=4400 steps=2962618 reward=1150 val=1791.0 elapsed=8921.0s
+mspacman ep=4410 steps=2971680 reward=1760 val=None elapsed=8947.6s
+mspacman ep=4420 steps=2981012 reward=1820 val=None elapsed=8973.7s
+mspacman ep=4430 steps=2989698 reward=1850 val=None elapsed=8998.8s
+mspacman ep=4440 steps=2998054 reward=1300 val=None elapsed=9022.6s
+mspacman ep=4450 steps=3004782 reward=930 val=None elapsed=9041.9s
+mspacman ep=4460 steps=3012868 reward=1820 val=None elapsed=9065.2s
+mspacman ep=4470 steps=3021022 reward=1840 val=None elapsed=9088.6s
+mspacman ep=4480 steps=3029982 reward=1570 val=None elapsed=9114.1s
+mspacman ep=4490 steps=3038894 reward=2060 val=None elapsed=9139.0s
+mspacman ep=4500 steps=3047154 reward=2980 val=2110.0 elapsed=9175.9s
+mspacman ep=4510 steps=3053606 reward=1320 val=None elapsed=9195.0s
+mspacman ep=4520 steps=3061436 reward=1530 val=None elapsed=9217.6s
+mspacman ep=4530 steps=3070804 reward=2020 val=None elapsed=9244.8s
+mspacman ep=4540 steps=3080432 reward=1660 val=None elapsed=9271.3s
+mspacman ep=4550 steps=3088646 reward=2070 val=None elapsed=9294.9s
+mspacman ep=4560 steps=3097848 reward=2790 val=None elapsed=9321.1s
+mspacman ep=4570 steps=3107284 reward=2290 val=None elapsed=9347.4s
+mspacman ep=4580 steps=3116066 reward=1920 val=None elapsed=9372.5s
+mspacman ep=4590 steps=3124688 reward=1220 val=None elapsed=9396.4s
+mspacman ep=4600 steps=3134062 reward=2440 val=2433.0 elapsed=9434.9s
+mspacman ep=4610 steps=3142296 reward=1510 val=None elapsed=9458.5s
+mspacman ep=4620 steps=3151942 reward=1310 val=None elapsed=9485.5s
+mspacman ep=4630 steps=3160088 reward=1860 val=None elapsed=9508.8s
+mspacman ep=4640 steps=3167658 reward=2300 val=None elapsed=9530.3s
+mspacman ep=4650 steps=3175304 reward=1610 val=None elapsed=9552.3s
+mspacman ep=4660 steps=3185254 reward=2310 val=None elapsed=9580.2s
+mspacman ep=4670 steps=3193840 reward=2030 val=None elapsed=9604.6s
+mspacman ep=4680 steps=3200848 reward=2650 val=None elapsed=9624.5s
+mspacman ep=4690 steps=3209506 reward=1720 val=None elapsed=9648.4s
+mspacman ep=4700 steps=3218834 reward=1980 val=1610.0 elapsed=9686.5s
+mspacman ep=4710 steps=3226876 reward=1300 val=None elapsed=9709.2s
+mspacman ep=4720 steps=3233764 reward=1110 val=None elapsed=9729.0s
+mspacman ep=4730 steps=3242668 reward=1320 val=None elapsed=9753.9s
+mspacman ep=4740 steps=3250370 reward=690 val=None elapsed=9775.3s
+mspacman ep=4750 steps=3258302 reward=2150 val=None elapsed=9797.2s
+mspacman ep=4760 steps=3267478 reward=2390 val=None elapsed=9823.8s
+mspacman ep=4770 steps=3275736 reward=1860 val=None elapsed=9847.1s
+mspacman ep=4780 steps=3284344 reward=4530 val=None elapsed=9871.9s
+mspacman ep=4790 steps=3292918 reward=1680 val=None elapsed=9896.3s
+mspacman ep=4800 steps=3300490 reward=1670 val=2279.0 elapsed=9933.5s
+mspacman ep=4810 steps=3309448 reward=1370 val=None elapsed=9959.6s
+mspacman ep=4820 steps=3317590 reward=770 val=None elapsed=9982.7s
+mspacman ep=4830 steps=3327102 reward=1800 val=None elapsed=10009.5s
+mspacman ep=4840 steps=3336224 reward=2130 val=None elapsed=10035.5s
+mspacman ep=4850 steps=3345856 reward=1200 val=None elapsed=10062.5s
+mspacman ep=4860 steps=3354034 reward=1630 val=None elapsed=10086.0s
+mspacman ep=4870 steps=3362176 reward=1210 val=None elapsed=10109.7s
+mspacman ep=4880 steps=3370310 reward=1040 val=None elapsed=10132.6s
+mspacman ep=4890 steps=3379172 reward=2140 val=None elapsed=10158.3s
+mspacman ep=4900 steps=3387950 reward=2000 val=2064.0 elapsed=10195.1s
+mspacman ep=4910 steps=3397182 reward=3790 val=None elapsed=10221.6s
+mspacman ep=4920 steps=3406924 reward=1490 val=None elapsed=10249.4s
+mspacman ep=4930 steps=3414934 reward=1890 val=None elapsed=10271.7s
+mspacman ep=4940 steps=3424260 reward=1820 val=None elapsed=10298.4s
+mspacman ep=4950 steps=3432558 reward=1680 val=None elapsed=10322.4s
+mspacman ep=4960 steps=3441470 reward=1590 val=None elapsed=10347.4s
+mspacman ep=4970 steps=3450540 reward=1590 val=None elapsed=10373.2s
+mspacman ep=4980 steps=3459630 reward=1640 val=None elapsed=10398.7s
+mspacman ep=4990 steps=3468824 reward=1260 val=None elapsed=10424.3s
+mspacman ep=5000 steps=3477422 reward=2750 val=2103.0 elapsed=10462.4s
+mspacman ep=5010 steps=3485838 reward=1440 val=None elapsed=10486.6s
+mspacman ep=5020 steps=3494786 reward=1530 val=None elapsed=10511.9s
+mspacman ep=5030 steps=3503016 reward=990 val=None elapsed=10535.2s
+mspacman ep=5040 steps=3512056 reward=2150 val=None elapsed=10561.8s
+mspacman ep=5050 steps=3519426 reward=1490 val=None elapsed=10582.9s
+mspacman ep=5060 steps=3528872 reward=1880 val=None elapsed=10608.9s
+mspacman ep=5070 steps=3537540 reward=1500 val=None elapsed=10633.5s
+mspacman ep=5080 steps=3546318 reward=2500 val=None elapsed=10657.7s
+mspacman ep=5090 steps=3555094 reward=2950 val=None elapsed=10682.8s
+mspacman ep=5100 steps=3564446 reward=1830 val=2126.0 elapsed=10724.7s
+mspacman ep=5110 steps=3573920 reward=2030 val=None elapsed=10751.3s
+mspacman ep=5120 steps=3583506 reward=1140 val=None elapsed=10778.0s
+mspacman ep=5130 steps=3592482 reward=1930 val=None elapsed=10802.7s
+mspacman ep=5140 steps=3602014 reward=1780 val=None elapsed=10829.9s
+mspacman ep=5150 steps=3610804 reward=2260 val=None elapsed=10854.3s
+mspacman ep=5160 steps=3619754 reward=2280 val=None elapsed=10879.1s
+mspacman ep=5170 steps=3629308 reward=1590 val=None elapsed=10905.8s
+mspacman ep=5180 steps=3638654 reward=2280 val=None elapsed=10932.1s
+mspacman ep=5190 steps=3648156 reward=1770 val=None elapsed=10958.3s
+mspacman ep=5200 steps=3658768 reward=2150 val=2315.0 elapsed=11002.7s
+mspacman ep=5210 steps=3668812 reward=1960 val=None elapsed=11031.3s
+mspacman ep=5220 steps=3678216 reward=1840 val=None elapsed=11057.8s
+mspacman ep=5230 steps=3687460 reward=2440 val=None elapsed=11083.5s
+mspacman ep=5240 steps=3697034 reward=2670 val=None elapsed=11110.3s
+mspacman ep=5250 steps=3707214 reward=1940 val=None elapsed=11138.6s
+mspacman ep=5260 steps=3717056 reward=1440 val=None elapsed=11166.0s
+mspacman ep=5270 steps=3726962 reward=2820 val=None elapsed=11194.4s
+mspacman ep=5280 steps=3737120 reward=3480 val=None elapsed=11222.6s
+mspacman ep=5290 steps=3746552 reward=1640 val=None elapsed=11248.5s
+mspacman ep=5300 steps=3754218 reward=380 val=1707.0 elapsed=11282.4s
+mspacman ep=5310 steps=3763902 reward=1070 val=None elapsed=11310.0s
+mspacman ep=5320 steps=3773032 reward=2290 val=None elapsed=11335.8s
+mspacman ep=5330 steps=3782104 reward=2400 val=None elapsed=11360.8s
+mspacman ep=5340 steps=3792424 reward=1920 val=None elapsed=11389.3s
+mspacman ep=5350 steps=3801724 reward=2460 val=None elapsed=11415.9s
+mspacman ep=5360 steps=3813030 reward=1980 val=None elapsed=11448.6s
+mspacman ep=5370 steps=3822656 reward=2310 val=None elapsed=11475.0s
+mspacman ep=5380 steps=3832770 reward=2760 val=None elapsed=11504.1s
+mspacman ep=5390 steps=3842382 reward=2190 val=None elapsed=11530.8s
+mspacman ep=5400 steps=3851930 reward=1700 val=2323.0 elapsed=11571.9s
+mspacman ep=5410 steps=3861380 reward=2970 val=None elapsed=11598.6s
+mspacman ep=5420 steps=3871174 reward=2440 val=None elapsed=11626.0s
+mspacman ep=5430 steps=3880712 reward=2460 val=None elapsed=11652.4s
+mspacman ep=5440 steps=3890892 reward=1960 val=None elapsed=11680.4s
+mspacman ep=5450 steps=3901616 reward=2790 val=None elapsed=11711.2s
+mspacman ep=5460 steps=3910922 reward=2190 val=None elapsed=11737.0s
+mspacman ep=5470 steps=3920180 reward=3470 val=None elapsed=11762.9s
+mspacman ep=5480 steps=3929738 reward=2160 val=None elapsed=11789.8s
+mspacman ep=5490 steps=3939384 reward=2660 val=None elapsed=11817.6s
+mspacman ep=5500 steps=3948050 reward=2270 val=2447.0 elapsed=11856.0s
+mspacman ep=5510 steps=3957870 reward=2820 val=None elapsed=11883.9s
+mspacman ep=5520 steps=3967852 reward=3450 val=None elapsed=11912.0s
+mspacman ep=5530 steps=3976782 reward=2680 val=None elapsed=11937.2s
+mspacman ep=5540 steps=3987196 reward=4840 val=None elapsed=11965.7s
+mspacman ep=5550 steps=3996998 reward=2120 val=None elapsed=11994.6s
+mspacman ep=5560 steps=4005862 reward=2060 val=None elapsed=12020.2s
+mspacman ep=5570 steps=4014616 reward=1820 val=None elapsed=12044.8s
+mspacman ep=5580 steps=4024336 reward=2380 val=None elapsed=12071.5s
+mspacman ep=5590 steps=4033292 reward=1850 val=None elapsed=12096.3s
+mspacman ep=5600 steps=4042936 reward=2220 val=2515.0 elapsed=12138.8s
+mspacman ep=5610 steps=4052646 reward=2100 val=None elapsed=12166.1s
+mspacman ep=5620 steps=4061646 reward=2750 val=None elapsed=12191.2s
+mspacman ep=5630 steps=4070956 reward=1430 val=None elapsed=12216.8s
+mspacman ep=5640 steps=4079884 reward=2410 val=None elapsed=12241.7s
+mspacman ep=5650 steps=4088414 reward=2030 val=None elapsed=12265.4s
+mspacman ep=5660 steps=4097416 reward=5710 val=None elapsed=12291.2s
+mspacman ep=5670 steps=4106466 reward=1990 val=None elapsed=12316.3s
+mspacman ep=5680 steps=4116388 reward=2360 val=None elapsed=12343.7s
+mspacman ep=5690 steps=4125588 reward=1680 val=None elapsed=12369.7s
+mspacman ep=5700 steps=4134166 reward=1180 val=1942.0 elapsed=12405.8s
+mspacman ep=5710 steps=4144454 reward=1990 val=None elapsed=12434.8s
+mspacman ep=5720 steps=4154074 reward=2100 val=None elapsed=12461.4s
+mspacman ep=5730 steps=4164888 reward=2540 val=None elapsed=12490.9s
+mspacman ep=5740 steps=4174962 reward=2480 val=None elapsed=12519.2s
+mspacman ep=5750 steps=4184420 reward=1950 val=None elapsed=12545.3s
+mspacman ep=5760 steps=4194402 reward=1960 val=None elapsed=12573.2s
+mspacman ep=5770 steps=4204332 reward=2650 val=None elapsed=12601.4s
+mspacman ep=5780 steps=4214010 reward=3560 val=None elapsed=12628.2s
+mspacman ep=5790 steps=4224080 reward=1610 val=None elapsed=12656.4s
+mspacman ep=5800 steps=4233954 reward=2580 val=2676.0 elapsed=12698.3s
+mspacman ep=5810 steps=4243426 reward=1450 val=None elapsed=12724.9s
+mspacman ep=5820 steps=4252432 reward=1780 val=None elapsed=12749.7s
+mspacman ep=5830 steps=4262002 reward=2250 val=None elapsed=12776.0s
+mspacman ep=5840 steps=4271114 reward=2070 val=None elapsed=12801.8s
+mspacman ep=5850 steps=4280514 reward=1510 val=None elapsed=12827.9s
+mspacman ep=5860 steps=4290984 reward=2150 val=None elapsed=12856.4s
+mspacman ep=5870 steps=4300190 reward=2600 val=None elapsed=12881.8s
+mspacman ep=5880 steps=4310092 reward=2490 val=None elapsed=12910.0s
+mspacman ep=5890 steps=4319644 reward=2530 val=None elapsed=12936.7s
+mspacman ep=5900 steps=4329568 reward=1730 val=2090.0 elapsed=12979.4s
+mspacman ep=5910 steps=4339118 reward=2030 val=None elapsed=13006.3s
+mspacman ep=5920 steps=4348974 reward=1030 val=None elapsed=13033.9s
+mspacman ep=5930 steps=4359604 reward=2240 val=None elapsed=13064.0s
+mspacman ep=5940 steps=4370188 reward=2620 val=None elapsed=13094.2s
+mspacman ep=5950 steps=4379072 reward=2290 val=None elapsed=13118.9s
+mspacman ep=5960 steps=4388180 reward=2140 val=None elapsed=13145.0s
+mspacman ep=5970 steps=4398682 reward=2130 val=None elapsed=13175.0s
+mspacman ep=5980 steps=4408356 reward=2650 val=None elapsed=13201.6s
+mspacman ep=5990 steps=4417836 reward=3220 val=None elapsed=13228.8s
+mspacman ep=6000 steps=4428106 reward=2050 val=2463.0 elapsed=13272.0s
+{
+  "n": 500,
+  "mean": 500.0,
+  "std": 0.0,
+  "minimum": 500.0,
+  "maximum": 500.0,
+  "seed_start": 100000,
+  "policy": "greedy",
+  "success_500": 1.0
+}
+{
+  "n": 500,
+  "mean": 22.02,
+  "std": 10.296778491090754,
+  "minimum": 9.0,
+  "maximum": 65.0,
+  "seed_start": 100000,
+  "policy": "uniform random",
+  "success_500": 0.0
+}
+A.L.E: Arcade Learning Environment (version 0.12.1+8a8fafb)
+[Powered by Stella]
+{
+  "n": 500,
+  "mean": 2752.08,
+  "std": 798.0065805525732,
+  "minimum": 480.0,
+  "maximum": 4370.0,
+  "seed_start": 100000,
+  "policy": "greedy",
+  "success_500": null
+}
+A.L.E: Arcade Learning Environment (version 0.12.1+8a8fafb)
+[Powered by Stella]
+{
+  "n": 500,
+  "mean": 256.88,
+  "std": 122.58842295619017,
+  "minimum": 90.0,
+  "maximum": 1240.0,
+  "seed_start": 100000,
+  "policy": "uniform random",
+  "success_500": null
+}
+{
+  "analytic_learning": [
+    {
+      "gamma": 0.95,
+      "reward_scale": 1.0,
+      "expected": [
+        [
+          0.95,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "learned": [
+        [
+          0.949999988079071,
+          0.0
+        ],
+        [
+          1.0,
+          -1.862645149230957e-09
+        ]
+      ],
+      "max_absolute_error": 1.1920928910669204e-08,
+      "pass_tolerance_002": true
+    },
+    {
+      "gamma": 0.99,
+      "reward_scale": 1.0,
+      "expected": [
+        [
+          0.99,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "learned": [
+        [
+          0.9900000095367432,
+          0.0
+        ],
+        [
+          1.0,
+          7.450580596923828e-09
+        ]
+      ],
+      "max_absolute_error": 9.536743172944284e-09,
+      "pass_tolerance_002": true
+    },
+    {
+      "gamma": 0.0,
+      "reward_scale": 1.0,
+      "expected": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "learned": [
+        [
+          -1.862645149230957e-09,
+          0.0
+        ],
+        [
+          1.0,
+          -1.4901161193847656e-08
+        ]
+      ],
+      "max_absolute_error": 1.4901161193847656e-08,
+      "pass_tolerance_002": true
+    },
+    {
+      "gamma": 0.95,
+      "reward_scale": 3.0,
+      "expected": [
+        [
+          2.8499999999999996,
+          0.0
+        ],
+        [
+          3.0,
+          0.0
+        ]
+      ],
+      "learned": [
+        [
+          2.8499996662139893,
+          0.0
+        ],
+        [
+          2.999999761581421,
+          0.0
+        ]
+      ],
+      "max_absolute_error": 3.3378601038691613e-07,
+      "pass_tolerance_002": true
+    },
+    {
+      "gamma": 0.95,
+      "reward_scale": 0.0,
+      "expected": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "learned": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "max_absolute_error": 0.0,
+      "pass_tolerance_002": true
+    }
+  ],
+  "terminal_vs_truncation_targets": {
+    "actual": [
+      1.0,
+      10.5
+    ],
+    "expected": [
+      1.0,
+      10.5
+    ]
+  },
+  "replay_history": {
+    "actual": {
+      "9": [
+        9,
+        9,
+        9,
+        9
+      ],
+      "10": [
+        9,
+        9,
+        9,
+        10
+      ],
+      "11": [
+        9,
+        9,
+        10,
+        11
+      ],
+      "12": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "13": [
+        12,
+        12,
+        12,
+        13
+      ]
+    },
+    "expected": {
+      "9": [
+        9,
+        9,
+        9,
+        9
+      ],
+      "10": [
+        9,
+        9,
+        9,
+        10
+      ],
+      "11": [
+        9,
+        9,
+        10,
+        11
+      ],
+      "12": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "13": [
+        12,
+        12,
+        12,
+        13
+      ]
+    },
+    "passed": true
+  },
+  "background_pixel_after_contrast": 0,
+  "cartpole_angle_perturbation": [
+    {
+      "angle_offset_rad": -0.15,
+      "n": 100,
+      "mean": 500.0,
+      "std": 0.0,
+      "success_500": 1.0,
+      "rewards": [
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0
+      ]
+    },
+    {
+      "angle_offset_rad": -0.075,
+      "n": 100,
+      "mean": 500.0,
+      "std": 0.0,
+      "success_500": 1.0,
+      "rewards": [
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0
+      ]
+    },
+    {
+      "angle_offset_rad": 0.0,
+      "n": 100,
+      "mean": 500.0,
+      "std": 0.0,
+      "success_500": 1.0,
+      "rewards": [
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0
+      ]
+    },
+    {
+      "angle_offset_rad": 0.075,
+      "n": 100,
+      "mean": 500.0,
+      "std": 0.0,
+      "success_500": 1.0,
+      "rewards": [
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0
+      ]
+    },
+    {
+      "angle_offset_rad": 0.15,
+      "n": 100,
+      "mean": 500.0,
+      "std": 0.0,
+      "success_500": 1.0,
+      "rewards": [
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0
+      ]
+    }
+  ]
+}
+Running paired frozen-model pixel interventions on CPU...
+A.L.E: Arcade Learning Environment (version 0.12.1+8a8fafb)
+[Powered by Stella]
+/nfs/home/wer7892/diego_hw2_codex_20261106/report.pdf

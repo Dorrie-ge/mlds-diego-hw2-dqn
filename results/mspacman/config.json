@@ -1,11 +1,11 @@
 {
   "command": "train",
   "game": "mspacman",
-  "episodes": 2,
-  "out": "outputs/Diego_HW2/results/mspacman_smoke",
+  "episodes": 6000,
+  "out": "results/mspacman",
   "seed": 42,
-  "device": "auto",
-  "validate_every": 2,
+  "device": "cuda",
+  "validate_every": 100,
   "double": false,
   "early_stop": false,
   "gamma": 0.99,
@@ -17,8 +17,8 @@
   "final_epsilon": 0.01,
   "batch_size": 64,
   "train_every": 4,
-  "torch": "2.15.0",
+  "torch": "2.5.1+cu118",
   "gymnasium": "1.4.0",
-  "device_used": "cpu",
+  "device_used": "cuda",
   "environment": "ALE/MsPacman-v5"
 }

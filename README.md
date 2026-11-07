@@ -2,7 +2,12 @@
 
 Public repository: https://github.com/Dorrie-ge/mlds-diego-hw2-dqn
 
-This package implements both required environments. `report_DRAFT.pdf` is explicitly incomplete until the MsPacman long run, 500-episode evaluations, and deepdish GPU execution are available. Do not submit the draft as a completed assignment.
+This package contains completed single-GPU deepdish experiments and the final `report.pdf`.
+
+- CartPole-v1: 1675 training episodes; 500/500 held-out episodes reached 500 steps (mean 500, sample SD 0).
+- ALE/MsPacman-v5: 6000 training episodes; 500 held-out episodes averaged 2752.08 raw points (sample SD 798.01), versus 256.88 for the matched-seed random baseline.
+- Final image-history interventions, analytic MDP experiments, initial-state robustness checks, raw logs, figures, run provenance and the selected trained checkpoints are included. Models are omitted from GitHub via `.gitignore` but included in the downloadable final package.
+- The report retains limitations: one training seed, value-calibration error, and inference interventions rather than retraining ablations. No submission to Canvas has been made.
 
 ## Installation
 
@@ -44,7 +49,7 @@ python plots.py
 python report.py --github-user your_actual_username --repo-url https://github.com/your_actual_username/your_actual_public_repository --final
 ```
 
-For a report with missing experiments visibly marked, use `python report.py` without `--final`. The final flag rejects missing metadata, evaluation counts other than 500, a mismatched environment, fewer than 4000 MsPacman training episodes, failure to improve over random in MsPacman, or absence of GPU run evidence. It does not verify that a repository is publicly accessible: manually open the real repository URL while logged out before submission.
+Use `python report.py --github-user Dorrie-ge --repo-url https://github.com/Dorrie-ge/mlds-diego-hw2-dqn --final` to regenerate the completed report from retained data. For intentionally incomplete experiments, omit `--final` to produce a visibly marked draft. The final flag rejects missing metadata, evaluation counts other than 500, a mismatched environment, fewer than 4000 MsPacman training episodes, failure to improve over random in MsPacman, or absence of GPU run evidence. It does not verify that a repository is publicly accessible: manually open the real repository URL while logged out before submission.
 
 ## What the validation experiments mean
 
@@ -62,8 +67,7 @@ For a report with missing experiments visibly marked, use `python report.py` wit
 - `best.pt`: selected only by validation seeds 200000 onward. `last.pt`: latest network, target, optimizer and counters. Training restarts from scratch; these are evaluation checkpoints, not exact replay/RNG resume snapshots.
 - `evaluation.csv/json`: 500 independent test episodes, raw reward, episode length, initial Q, discounted training-unit return, sample standard deviation, and CartPole success fraction. Seeds begin at 100000 and are separate from training and model selection.
 - `random.csv/json`: matched-seed baseline.
-- `mspacman_smoke/`: an untrained two-episode CPU integration run only, not learning/convergence evidence and excluded from report performance figures.
-- `config.json`, `hardware.txt`: hyperparameters, environment/library versions and GPU provenance. The local CPU CartPole run is useful evidence but does not satisfy the specified deepdish GPU requirement.
+- `config.json`, `hardware.txt`, `run_provenance.json`: actual deepdish CUDA hyperparameters, library versions, host and one-GPU visibility. Final result directories contain the GPU runs; earlier CPU-only results are not mixed into their statistics.
 
 A seed-42 run is not a multi-seed generalization claim. Avoid retuning on the reported test set. If results are inspected during tuning, use a fresh final test seed range and document that change.
 
@@ -94,7 +98,7 @@ nohup bash run_deepdish.sh > direct_training.log 2>&1 < /dev/null &
 tail -n 20 direct_training.log
 ```
 
-Check current GPU usage before choosing a device. `RUN_STARTED` records launch time; `run_exit_status.txt` records eventual exit status, and `RUN_COMPLETE` is written only after all training, evaluations and final report generation succeed. A process launch is not evidence that MsPacman has converged. The retained Nomad configuration is an optional scheduling alternative, not a requirement for the direct run. Do not start both pipelines.
+Check current GPU usage before choosing a device. `RUN_STARTED` records launch time; `run_exit_status.txt` records eventual exit status, and `RUN_COMPLETE` is written only after all training, evaluations and final report generation succeed. The retained completed run exited with status 0 and has a RUN_COMPLETE timestamp. A process launch alone would not establish convergence. The retained Nomad configuration is an optional scheduling alternative, not a requirement for the direct run. Do not start both pipelines.
 
 ### Final frozen-model image interventions
 

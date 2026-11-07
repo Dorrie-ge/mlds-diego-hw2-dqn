@@ -1,0 +1,10 @@
+{
+  "hostname": "mlds-deepdish1",
+  "torch": "2.5.1+cu118",
+  "cuda": "11.8",
+  "gpu_name": "NVIDIA GeForce GTX 1080",
+  "visible_device_count": 1,
+  "cuda_visible_devices": "0",
+  "run_started_utc": "2026-11-06T17:16:57Z",
+  "execution_mode": "direct SSH; authorized by account owner"
+}

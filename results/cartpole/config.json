@@ -2,9 +2,9 @@
   "command": "train",
   "game": "cartpole",
   "episodes": 3000,
-  "out": "outputs/Diego_HW2/results/cartpole",
+  "out": "results/cartpole",
   "seed": 42,
-  "device": "auto",
+  "device": "cuda",
   "validate_every": 25,
   "double": false,
   "early_stop": true,
@@ -17,8 +17,8 @@
   "final_epsilon": 0.02,
   "batch_size": 64,
   "train_every": 4,
-  "torch": "2.15.0",
+  "torch": "2.5.1+cu118",
   "gymnasium": "1.4.0",
-  "device_used": "cpu",
+  "device_used": "cuda",
   "environment": "CartPole-v1"
 }
